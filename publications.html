@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Full publication list for Ruiyu Wang.">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Publications | Ruiyu Wang</title>
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+	<link rel="stylesheet" href="css/portfolio.css?v=20260625-header-text-large">
+	<script src="js/site.js?v=20260625-photo-hover" defer></script>
+</head>
+
+<body class="portfolio-site">
+	<header class="site-header" aria-label="Primary navigation">
+		<a class="brand" href="index.html" aria-label="Ruiyu Wang home">
+			<span class="brand-mark">RW</span>
+			<span>Ruiyu Wang</span>
+		</a>
+		<nav class="site-nav">
+			<a href="publications.html">Publications</a>
+			<a href="cv.html">CV</a>
+			<a href="life.html">Life</a>
+			<a href="index.html#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main class="publication-page-main">
+		<section class="page-hero" aria-labelledby="publication-title">
+			<p class="eyebrow">Full Publication List</p>
+			<h1 id="publication-title">Publications</h1>
+			<p>A list of journal articles, conference proceedings, and workshop papers, last updated in June 2026. For the latest updates, please check <a href="https://scholar.google.com/citations?user=YoTCQe4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+			<a class="section-link" href="index.html">Back to homepage</a>
+		</section>
+
+		<div class="research-toolbar publication-page-toolbar" aria-label="Publication filters">
+			<label class="search-field">
+				<span>Search</span>
+				<input id="publication-search" type="search" placeholder="Title, author, venue, topic" autocomplete="off">
+			</label>
+			<div class="filter-chips" role="group" aria-label="Filter publications by topic">
+				<button class="filter-chip is-active" type="button" data-filter="all">All</button>
+				<button class="filter-chip" type="button" data-filter="robotics">Perception</button>
+				<button class="filter-chip" type="button" data-filter="vision">Vision</button>
+					<button class="filter-chip" type="button" data-filter="llms">Reasoning</button>
+				<button class="filter-chip" type="button" data-filter="rl">RL</button>
+			</div>
+		</div>
+
+		<section class="publication-list-section publication-year-section" data-publication-section aria-labelledby="publications-2026-title">
+			<div class="publication-year-divider">
+				<h2 id="publications-2026-title">2026</h2>
+			</div>
+			<div class="publication-list">
+				<article class="publication-list-item has-media" data-publication-item data-topic="reasoning llms journal conference" data-search="nondeterministic polynomial-time problem challenge ever-scaling reasoning benchmark llms chang yang ruiyu wang junzhe jiang qi jiang qinggang zhang yanchen deng shuxin li shuyue hu bo li florian pokorny xiao huang xinrun wang tmlr 2026">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/nppc.png" alt="NPPC benchmark preview" width="394" height="375" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>Nondeterministic Polynomial-time Problem Challenge: An Ever-Scaling Reasoning Benchmark for LLMs</h3>
+						<p>Chang Yang<sup>*</sup>, <strong>Ruiyu Wang<sup>*</sup></strong>, Junzhe Jiang, Qi Jiang, Qinggang Zhang, Yanchen Deng, Shuxin Li, Shuyue Hu, Bo Li, Florian T. Pokorny, Xiao Huang, and Xinrun Wang</p>
+						<p><em>Transactions on Machine Learning Research (TMLR)</em></p>
+						<div class="publication-links">
+							<a href="https://openreview.net/pdf?id=Xb6d5lGLb2" target="_blank" rel="noopener">Paper</a>
+							<a href="https://ruiyuwang.github.io/nppc_leaderboard/" target="_blank" rel="noopener">Website</a>
+							<a href="https://github.com/SMU-DIGA/nppc" target="_blank" rel="noopener">Code</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Reasoning is the fundamental capability of large language models (LLMs). Due to the rapid progress of LLMs, there are two main issues of current benchmarks: i) these benchmarks can be crushed in a short time (less than 1 year), and ii) these benchmarks may be easily hacked. To handle these issues, we propose the ever-scalingness for building the benchmarks which are scaling over complexity, instance, oversight and coverage. This paper presents Nondeterministic Polynomial-time Problem Challenge (NPPC), an ever-scaling reasoning benchmark for LLMs. Specifically, the NPPC has three main modules: i) npgym, which provides a unified interface of 25 well-known NP-complete problems and can generate any number of instances with any levels of complexities, ii) npsolver, which provides a unified interface to evaluate the problem instances with both online and offline models via APIs and local deployments, respectively, and iii) npeval, which provides the comprehensive and ready-to-use tools to analyze the performances of LLMs over different problems, the number of tokens, the aha moments, the reasoning errors and the solution errors. Extensive experiments over widely-used LLMs demonstrate: i) NPPC can successfully decrease the performances of advanced LLMs to below 10%, demonstrating that NPPC is not crushed by current models, ii) DeepSeek-R1, Claude-3.7-Sonnet, and o1/o3-mini are the most powerful LLMs, where DeepSeek-R1 can outperform Claude-3.7-Sonnet and o1/o3-mini in most NP-complete problems considered, and iii) the numbers of tokens, aha moments in the advanced LLMs, e.g., Claude-3.7-Sonnet and DeepSeek-R1, are observed first to increase and then decrease when the problem instances become more and more difficult. Through continuously scaling analysis, NPPC can provide critical insights into LLMs' reasoning capabilities, exposing fundamental limitations and suggesting future directions for further improvements.</p>
+							</div>
+					</div>
+					</article>
+					<article class="publication-list-item has-media" data-publication-item data-topic="llms reasoning finance conference" data-search="finmaster holistic benchmark mastering full-pipeline financial workflows llms junzhe jiang chang yang aixin cui sihan jin ruiyu wang bo li xiao huang dongning sun xinrun wang findings acl 2026 finance benchmark">
+						<figure class="publication-thumb">
+							<img src="images/paper_teaser/finmaster.png" alt="FinMaster financial workflow benchmark preview" width="1059" height="385" loading="lazy">
+						</figure>
+						<div class="publication-content">
+							<h3>FinMaster: A Holistic Benchmark for Mastering Full-Pipeline Financial Workflows with LLMs</h3>
+							<p>Junzhe Jiang, Chang Yang, Aixin Cui, Sihan Jin, <strong>Ruiyu Wang</strong>, Bo Li, Xiao Huang, Dongning Sun and Xinrun Wang</p>
+							<p><em>Findings of the Association for Computational Linguistics (ACL)</em></p>
+							<div class="publication-links">
+								<a href="https://arxiv.org/pdf/2505.13533.pdf" target="_blank" rel="noopener">Paper</a>
+								<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Financial tasks are pivotal to global economic stability; however, their execution faces challenges including labor intensive processes, low error tolerance, data fragmentation, and tool limitations. Although large language models (LLMs) have succeeded in various natural language processing tasks and have shown potential in automating workflows through reasoning and contextual understanding, current benchmarks for evaluating LLMs in finance lack sufficient domain-specific data, have simplistic task design, and incomplete evaluation frameworks. To address these gaps, this article presents FinMaster, a comprehensive financial benchmark designed to systematically assess the capabilities of LLM in financial literacy, accounting, auditing, and consulting. Specifically, FinMaster comprises three main modules: i) FinSim, which builds simulators that generate synthetic, privacy-compliant financial data for companies to replicate market dynamics; ii) FinSuite, which provides tasks in core financial domains, spanning 183 tasks of various types and difficulty levels; and iii) FinEval, which develops a unified interface for evaluation. Extensive experiments over state-of-the-art LLMs reveal critical capability gaps in financial reasoning, with accuracy dropping from over 90% on basic tasks to merely 40% on complex scenarios requiring multi-step reasoning. This degradation exhibits the propagation of computational errors, where single-metric calculations initially demonstrating 58% accuracy decreased to 37% in multimetric scenarios. To the best of our knowledge, FinMaster is the first benchmark that covers full-pipeline financial workflows with challenging tasks. We hope that FinMaster can bridge the gap between research and industry practitioners, driving the adoption of LLMs in real-world financial practices to enhance efficiency and accuracy.</p>
+							</div>
+						</div>
+					</article>
+					<article class="publication-list-item has-media" data-publication-item data-topic="robotics visuomotor generalization journal conference" data-search="palm enhanced generalizability local visuomotor policies perception alignment ruiyu wang zheyu zhuang danica kragic florian pokorny ral 2026">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/palm.png" alt="PALM perception alignment preview" width="3566" height="3389" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>PALM: Enhanced Generalizability for Local Visuomotor Policies via Perception Alignment</h3>
+						<p><strong>Ruiyu Wang*</strong>, Zheyu Zhuang*, Danica Kragic and Florian T. Pokorny</p>
+						<p><em>IEEE Robotics and Automation Letters (RA-L)</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2601.19514.pdf" target="_blank" rel="noopener">Paper</a>
+							<a href="https://github.com/RuiyuWANG/PALM/tree/main" target="_blank" rel="noopener">Code</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Generalizing beyond the training domain in image-based behavior cloning remains challenging. Existing methods address individual axes of generalization, workspace shifts, viewpoint changes, and cross-embodiment transfer, yet they are typically developed in isolation and often rely on complex pipelines. We introduce PALM (Perception Alignment for Local Manipulation), which leverages the invariance of local action distributions between out-of-distribution (OOD) and demonstrated domains to address these OOD shifts concurrently, without additional input modalities, model changes, or data collection. PALM modularizes the manipulation policy into coarse global components and a local policy for fine-grained actions. We reduce the discrepancy between in-domain and OOD inputs at the local policy level by enforcing local visual focus and consistent proprioceptive representation, allowing the policy to retrieve invariant local actions under OOD conditions. Experiments show that PALM limits OOD performance drops to 8% in simulation and 24% in the real world, compared to 45% and 77% for baselines.</p>
+							</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="publication-list-section publication-year-section" data-publication-section aria-labelledby="publications-2025-title">
+			<div class="publication-year-divider">
+				<h2 id="publications-2025-title">2025</h2>
+				</div>
+					<div class="publication-list">
+						<article class="publication-list-item has-media" data-publication-item data-topic="vision data-efficiency journal conference" data-search="paca perspective-aware cross-attention representation zero-shot scene rearrangement shutong jin ruiyu wang kuangyi chen florian pokorny wacv 2025">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/PACA.png" alt="PACA scene rearrangement preview" width="1499" height="411" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>PACA: Perspective-Aware Cross-Attention Representation for Zero-Shot Scene Rearrangement</h3>
+						<p>Shutong Jin*, <strong>Ruiyu Wang*</strong>, Kuangyi Chen and Florian T. Pokorny</p>
+						<p><em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2410.22059.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Scene rearrangement, like table tidying, is a challenging task in robotic manipulation due to the complexity of predicting diverse object arrangements. Web-scale trained generative models such as Stable Diffusion can aid by generating natural scenes as goals. To facilitate robot execution, object-level representations must be extracted to match the real scenes with the generated goals and to calculate object pose transformations. Current methods typically use a multi-step design that involves separate models for generation, segmentation, and feature encoding, which can lead to a low success rate due to error accumulation. Furthermore, they lack control over the viewing perspectives of the generated goals, restricting the tasks to 3-DoF settings. In this paper, we propose PACA, a zero-shot pipeline for scene rearrangement that leverages perspective-aware cross-attention representation derived from Stable Diffusion. Specifically, we develop a representation that integrates generation, segmentation, and feature encoding into a single step to produce object-level representations. Additionally, we introduce perspective control, thus enabling the matching of 6-DoF camera views and extending past approaches that were limited to 3-DoF top-down views. The efficacy of our method is demonstrated through its zero-shot performance in real robot experiments across various scenes, achieving an average matching accuracy and execution success rate of 87% and 67%, respectively.</p>
+							</div>
+					</div>
+				</article>
+					<article class="publication-list-item has-media" data-publication-item data-topic="rl vision journal conference" data-search="double oracle neural architecture search game theoretic deep learning models aye phyu phyu aung xinrun wang ruiyu wang hau chan bo an xiaoli li j senthilnath ieee transactions image processing 2025">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/donas.png" alt="Double Oracle Neural Architecture Search preview" width="638" height="356" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>Double Oracle Neural Architecture Search for Game Theoretic Deep Learning Models</h3>
+						<p>Aye Phyu Phyu Aung, Xinrun Wang, <strong>Ruiyu Wang</strong>, Hau Chan, Bo An, Xiaoli Li and J. Senthilnath</p>
+						<p><em>IEEE Transactions on Image Processing</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2410.04764.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>In this paper, we propose a new approach to train deep learning models using game theory concepts including Generative Adversarial Networks (GANs) and Adversarial Training (AT) where we deploy a double-oracle framework using best response oracles. GAN is essentially a two-player zero-sum game between the generator and the discriminator. The same concept can be applied to AT with attacker and classifier as players. Training these models is challenging as a pure Nash equilibrium may not exist and even finding the mixed Nash equilibrium is difficult as training algorithms for both GAN and AT have a large-scale strategy space. Extending our preliminary model DO-GAN, we propose the methods to apply the double oracle framework concept to Adversarial Neural Architecture Search (NAS for GAN) and Adversarial Training (NAS for AT) algorithms. We first generalize the players' strategies as the trained models of generator and discriminator from the best response oracles. We then compute the meta-strategies using a linear program. For scalability of the framework where multiple network models of best responses are stored in the memory, we prune the weakly-dominated players' strategies to keep the oracles from becoming intractable. Finally, we conduct experiments on MNIST, CIFAR-10 and TinyImageNet for DONAS-GAN. We also evaluate the robustness under FGSM and PGD attacks on CIFAR-10, SVHN and TinyImageNet for DONAS-AT. We show that all our variants have significant improvements in both subjective qualitative evaluation and quantitative metrics, compared with their respective base architectures.</p>
+							</div>
+					</div>
+				</article>
+				<article class="publication-list-item has-media" data-publication-item data-topic="robotics visuomotor journal conference" data-search="feature extractor policy learner rethinking role visual encoders visuomotor policies ruiyu wang zheyu zhuang shutong jin nils ingelhag danica kragic florian pokorny icra 2025">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/visual_encoder.png" alt="Visual encoder policy preview" width="542" height="341" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>Feature Extractor or Policy Learner: Rethinking the Role of Visual Encoders in Visuomotor Policies</h3>
+						<p><strong>Ruiyu Wang</strong>, Zheyu Zhuang, Shutong Jin, Nils Ingelhag, Danica Kragic and Florian T. Pokorny</p>
+						<p><em>IEEE International Conference on Robotics and Automation (ICRA)</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2409.20248.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>An end-to-end (E2E) visuomotor policy is typically treated as a unified whole, but recent approaches using out-of-domain (OOD) data to pretrain the visual encoder have cleanly separated the visual encoder from the network, with the remainder referred to as the policy. We propose Visual Alignment Testing, an experimental framework designed to evaluate the validity of this functional separation. Our results indicate that in E2E-trained models, visual encoders actively contribute to decision-making resulting from motor data supervision, contradicting the assumed functional separation. In contrast, OOD-pretrained models, where encoders lack this capability, experience an average performance drop of 42% in our benchmark results, compared to the state-of-the-art performance achieved by E2E policies. We believe this initial exploration of visual encoders' role can provide a first step towards guiding future pretraining methods to address their decision-making ability, such as developing task-conditioned or context-aware encoders.</p>
+							</div>
+					</div>
+				</article>
+					<article class="publication-list-item has-media" data-publication-item data-topic="robotics visuomotor journal conference" data-search="mirrorduo reflection-consistent visuomotor learning mirrored demonstration pairs zheyu zhuang ruiyu wang giovanni luca marchetti florian pokorny danica kragic corl 2025">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/mirrorduo.gif?v=20260625-mirrorduo-update" alt="MirrorDuo mirrored demonstration preview" width="272" height="292" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>MirrorDuo: Reflection-Consistent Visuomotor Learning from Mirrored Demonstration Pairs</h3>
+						<p>Zheyu Zhuang*, <strong>Ruiyu Wang*</strong>, Giovanni Luca Marchetti, Florian T. Pokorny and Danica Kragic</p>
+						<p><em>Conference on Robot Learning (CoRL)</em></p>
+						<div class="publication-links">
+							<a href="https://openreview.net/pdf?id=cUeY476ohd" target="_blank" rel="noopener">Paper</a>
+							<a href="https://github.com/zheyu-zhuang/mirror-duo" target="_blank" rel="noopener">Code</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Image-based behaviour cloning leverages demonstrations captured from ubiquitous RGB cameras, enabling impressive visuomotor performance. However, it remains constrained by the cost of collecting sufficiently diverse demonstrations, especially for generalizing across workspace variations. We propose MirrorDuo, a mirroring-based formulation that operates on image, proprioception, and full 6-DoF end-effector action tuples, generating a mirrored counterpart for each original demonstration, effectively achieving "collect one, get one for free." It can be applied as a data augmentation strategy for existing learning pipelines, such as standard behaviour cloning or diffusion policy, or as a structural prior for reflection-equivariant policy networks. By leveraging the overlap between the original and mirrored domains, MirrorDuo achieves significantly improved performance under the same data budget when demonstrations are evenly distributed across both sides of the workspace. When demonstrations are confined to one side, MirrorDuo enables efficient skill transfer to the mirrored workspace with as few as zero or just 5 demonstrations in the target arrangement.</p>
+							</div>
+					</div>
+				</article>
+				<article class="publication-list-item has-media" data-publication-item data-topic="vision video data-efficiency journal conference" data-search="realcraft attention control tool zero-shot consistent video editing shutong jin ruiyu wang florian pokorny iconip 2025">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/realcraft.png" alt="RealCraft video editing preview" width="953" height="845" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>RealCraft: Attention Control as A Tool for Zero-Shot Consistent Video Editing</h3>
+						<p>Shutong Jin, <strong>Ruiyu Wang</strong> and Florian T. Pokorny</p>
+						<p><em>International Conference on Neural Information Processing (ICONIP)</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2312.12635.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Even though large-scale text-to-image generative models show promising performance in synthesizing high-quality images, applying these models directly to image editing remains a significant challenge. This challenge is further amplified in video editing due to the additional dimension of time. This is especially the case for editing real-world videos as it necessitates maintaining a stable structural layout across frames while executing localized edits without disrupting the existing content. In this paper, we propose RealCraft, an attention-control-based method for zero-shot real-world video editing. By swapping cross-attention for new feature injection and relaxing spatial-temporal attention of the editing object, we achieve localized shape-wise edit along with enhanced temporal consistency. Our model directly uses Stable Diffusion and operates without the need for additional information. We showcase the proposed zero-shot attention-control-based method across a range of videos, demonstrating shape-wise, time-consistent and parameter-free editing in videos of up to 64 frames.</p>
+							</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="publication-list-section publication-year-section" data-publication-section aria-labelledby="publications-2024-title">
+			<div class="publication-year-divider">
+				<h2 id="publications-2024-title">2024</h2>
+			</div>
+			<div class="publication-list">
+				<article class="publication-list-item has-media" data-publication-item data-topic="robotics generalization visuomotor journal conference" data-search="enhancing visual domain robustness behaviour cloning saliency-guided augmentation zheyu zhuang ruiyu wang nils ingelhag ville kyrki danica kragic corl 2024">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/SaGA.png" alt="SaGA augmentation preview" width="815" height="708" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>Enhancing Visual Domain Robustness in Behaviour Cloning via Saliency-Guided Augmentation</h3>
+						<p>Zheyu Zhuang, <strong>Ruiyu Wang</strong>, Nils Ingelhag, Ville Kyrki and Danica Kragic</p>
+						<p><em>Conference on Robot Learning (CoRL)</em></p>
+						<div class="publication-links">
+							<a href="https://openreview.net/pdf?id=CskuWHDBAr" target="_blank" rel="noopener">Paper</a>
+							<a href="https://github.com/Zheyu-Zhuang/RoboSaGA" target="_blank" rel="noopener">Code</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>In vision-based behaviour cloning (BC), traditional image-level augmentation methods such as pixel shifting enhance in-domain performance but often struggle with visual domain shifts, including distractors, occlusion, and changes in lighting and backgrounds. Conversely, superimposition-based augmentation, proven effective in computer vision, improves model generalisability by blending training images and out-of-domain images. Despite its potential, the applicability of these methods to vision-based BC remains unclear due to the unique challenges posed by BC demonstrations; specifically, preserving task-critical scene semantics, spatial-temporal relationships, and agent-target interactions is crucial. To address this, we introduce RoboSaGA, a context-aware approach that dynamically adjusts augmentation intensity per pixel based on input saliency derived from the policy. This method ensures aggressive augmentation within task-trivial areas without compromising task-critical information. Furthermore, RoboSaGA seamlessly integrates into existing network architectures without the need for structural changes or additional learning objectives. Our empirical evaluations across both simulated and real-world settings demonstrate that RoboSaGA not only maintains in-domain performance but significantly improves resilience to distractors and background variations.</p>
+							</div>
+					</div>
+				</article>
+				<article class="publication-list-item has-media" data-publication-item data-topic="robotics visuomotor journal conference" data-search="physics background attributes impact video transformers robotic manipulation case study planar pushing shutong jin ruiyu wang muhammad zahid florian pokorny iros 2024">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/push1k.gif" alt="Planar pushing dataset preview" width="2500" height="1406" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>How Physics and Background Attributes Impact Video Transformers in Robotic Manipulation: A Case Study on Planar Pushing</h3>
+						<p>Shutong Jin, <strong>Ruiyu Wang</strong>, Muhammad Zahid and Florian T. Pokorny</p>
+						<p><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em></p>
+						<div class="publication-links">
+							<a href="https://arxiv.org/pdf/2310.02044.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>As model and dataset sizes continue to scale in robot learning, the need to understand how the composition and properties of a dataset affect model performance becomes increasingly urgent to ensure cost-effective data collection and model performance. In this work, we empirically investigate how physics attributes (color, friction coefficient, shape) and scene background characteristics, such as the complexity and dynamics of interactions with background objects, influence the performance of Video Transformers in predicting planar pushing trajectories. We investigate three primary questions: How do physics attributes and background scene characteristics influence model performance? What kind of changes in attributes are most detrimental to model generalization? What proportion of fine-tuning data is required to adapt models to novel scenarios? To facilitate this research, we present CloudGripper-Push-1K, a large real-world vision-based robot pushing dataset comprising 1278 hours and 460,000 videos of planar pushing interactions with objects with different physics and background attributes. We also propose Video Occlusion Transformer (VOT), a generic modular video-transformer-based trajectory prediction framework which features 3 choices of 2D-spatial encoders as the subject of our case study. The dataset and source code are available at https://cloudgripper.org.</p>
+							</div>
+					</div>
+				</article>
+					<article class="publication-list-item has-media" data-publication-item data-topic="robotics visuomotor workshop" data-search="towards universality performance benchmark pretrained vision models visuomotor control ruiyu wang zheyu zhuang shutong jin florian pokorny iros workshop 2024">
+					<figure class="publication-thumb">
+							<img src="images/paper_teaser/to_uni.png" alt="Pretrained vision model benchmark preview" width="662" height="203" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>Towards Universality: A Performance Benchmark of Pretrained Vision Models in Visuomotor Control</h3>
+						<p><strong>Ruiyu Wang</strong>, Zheyu Zhuang, Shutong Jin and Florian T. Pokorny</p>
+						<p><em>IEEE/RSJ IROS Workshop on Collecting, Managing, and Utilizing Data through Embodied Robots</em></p>
+						<div class="publication-links">
+							<a href="https://openreview.net/forum?id=gJiUNouE3t" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+						</div>
+						<div class="publication-details publication-abstract" hidden>
+							<p>This workshop paper benchmarks pretrained vision models for visuomotor control, examining how broadly visual representations transfer to embodied manipulation policies.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="publication-list-section publication-year-section" data-publication-section aria-labelledby="publications-2022-title">
+			<div class="publication-year-divider">
+				<h2 id="publications-2022-title">2022</h2>
+			</div>
+			<div class="publication-list">
+				<article class="publication-list-item has-media" data-publication-item data-topic="rl generalization workshop" data-search="game-theoretic perspective generalization reinforcement learning chang yang ruiyu wang xinrun wang zhen wang neurips workshop deep reinforcement learning 2022">
+					<figure class="publication-thumb">
+						<img src="images/paper_teaser/girl.png" alt="Reinforcement learning preview" width="608" height="153" loading="lazy">
+					</figure>
+					<div class="publication-content">
+						<h3>A Game-Theoretic Perspective of Generalization in Reinforcement Learning</h3>
+						<p>Chang Yang*, <strong>Ruiyu Wang*</strong>, Xinrun Wang and Zhen Wang</p>
+						<p><em>NeurIPS Workshop on Deep Reinforcement Learning</em></p>
+						<div class="publication-links">
+							<a href="https://openreview.net/pdf?id=GU2BtS0Jwu" target="_blank" rel="noopener">Paper</a>
+							<a href="https://neurips.cc/virtual/2022/64144" target="_blank" rel="noopener">Website</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Generalization in reinforcement learning (RL) is of importance for real deployment of RL algorithms. Various schemes are proposed to address the generalization issues, including transfer learning, multi-task learning and meta learning, as well as the robust and adversarial reinforcement learning. However, there is not a unified formulation of the various schemes, as well as the comprehensive comparisons of methods across different schemes. In this work, we propose a game-theoretic framework for the generalization in reinforcement learning, named GiRL, where an RL agent is trained against an adversary over a set of tasks, where the adversary can manipulate the distributions over tasks within a given threshold. With different configurations, GiRL can reduce the various schemes mentioned above. To solve GiRL, we adapt the widely-used method in game theory, policy space response oracle (PSRO) with the following three important modifications: i) we use model-agnostic meta learning (MAML) as the best-response oracle, ii) we propose a modified projected replicated dynamics, i.e., R-PRD, which ensures the computed meta-strategy of the adversary fall in the threshold, and iii) we also propose a protocol for the few-shot learning of the multiple strategies during testing. Extensive experiments on MuJoCo environments demonstrate that our proposed methods can outperform existing baselines, e.g., MAML.</p>
+							</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<p class="empty-state publication-page-empty" hidden>No publications match the current filter.</p>
+	</main>
+</body>
+</html>

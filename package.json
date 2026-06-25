@@ -1,0 +1,10 @@
+{
+  "name": "ruiyuwang.github.io",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build:life": "node scripts/build-life-gallery.js",
+    "build:keywords": "node scripts/build-research-keywords.js",
+    "check": "node --check js/site.js && node --check js/research-keywords.js && node --check scripts/build-life-gallery.js && node --check scripts/build-research-keywords.js && node --check scripts/check-site.js && node scripts/check-site.js"
+  }
+}

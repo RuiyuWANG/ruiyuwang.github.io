@@ -1,0 +1,50 @@
+# System and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local environment, secrets, and private notes
+.env
+.env.*
+!.env.example
+.agents/
+.codex/
+private/
+drafts/
+notes/
+local/
+
+# Dependencies, caches, logs, and local build output
+node_modules/
+.cache/
+.tmp/
+tmp/
+dist/
+build/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Raw/private source material that should not be published by GitHub Pages
+.pdfs/
+pdfs/raw/
+pdfs/private/
+pdfs/source/
+pdfs/*.docx
+pdfs/*.pptx
+images/raw/
+images/private/
+images/originals/
+images/oc/raw/
+images/oc/private/
+*.CR2
+*.CR3
+*.NEF
+*.ARW
+*.DNG
+*.RAF
