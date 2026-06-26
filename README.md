@@ -62,7 +62,13 @@ This refreshes `js/research-keywords.js`, which is loaded by `index.html`.
 
 The Life page gallery is generated from the files in `images/oc`.
 Profile photos are not included. Wide panoramic images are placed before the
-regular masonry-style photo stack.
+regular photo stack.
+
+The build script also generates compressed WebP thumbnails in `images/oc-thumbs`.
+The page loads those thumbnails for speed, while each click still opens the
+original full-size image in the lightbox. The script precomputes a four-column
+layout and writes it into `life.html`, so the online gallery does not reshuffle
+while large images are loading.
 
 After adding or removing photos, run:
 
@@ -71,6 +77,13 @@ npm run build:life
 ```
 
 The script skips files whose names start with `profile_` or `profile-`.
+
+## Logo and favicon
+
+The browser tab icon and the header logo both use `favicon.svg`. To update the
+site mark, replace that file and update the version query attached to
+`favicon.svg` in the HTML pages, for example `?v=20260626-rw-logo`. The version
+query helps GitHub Pages and browsers stop showing an old cached icon.
 
 ## Privacy notes
 

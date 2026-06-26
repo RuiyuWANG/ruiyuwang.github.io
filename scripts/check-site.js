@@ -119,19 +119,25 @@ const expectedLifePhotos = fs.readdirSync(ocDir)
   .map((name) => `images/oc/${name}`)
   .sort();
 const lifeHtml = fs.readFileSync(toRootPath("life.html"), "utf8");
-const renderedLifePhotos = Array.from(lifeHtml.matchAll(/<img src="(images\/oc\/[^"]+)"/g))
+const linkedLifePhotos = Array.from(lifeHtml.matchAll(/data-lightbox-src="(images\/oc\/[^"]+)"/g))
   .map((match) => cleanRef(match[1]))
   .sort();
-const missingLifePhotos = expectedLifePhotos.filter((file) => !renderedLifePhotos.includes(file));
-const extraLifePhotos = renderedLifePhotos.filter((file) => !expectedLifePhotos.includes(file));
-const duplicateLifePhotos = renderedLifePhotos.filter((file, index) => renderedLifePhotos.indexOf(file) !== index);
+const missingLifePhotos = expectedLifePhotos.filter((file) => !linkedLifePhotos.includes(file));
+const extraLifePhotos = linkedLifePhotos.filter((file) => !expectedLifePhotos.includes(file));
+const duplicateLifePhotos = linkedLifePhotos.filter((file, index) => linkedLifePhotos.indexOf(file) !== index);
 
-if (missingLifePhotos.length || extraLifePhotos.length || duplicateLifePhotos.length) {
+const renderedLifeThumbnails = Array.from(lifeHtml.matchAll(/<img src="(images\/oc-thumbs\/[^"]+)"/g))
+  .map((match) => cleanRef(match[1]))
+  .sort();
+const missingLifeThumbnails = renderedLifeThumbnails.filter((file) => !exists(file));
+
+if (missingLifePhotos.length || extraLifePhotos.length || duplicateLifePhotos.length || missingLifeThumbnails.length) {
   fail("Life gallery is not synchronized with images/oc:", [
     ...missingLifePhotos.map((file) => `missing ${file}`),
     ...extraLifePhotos.map((file) => `extra ${file}`),
-    ...duplicateLifePhotos.map((file) => `duplicate ${file}`)
+    ...duplicateLifePhotos.map((file) => `duplicate ${file}`),
+    ...missingLifeThumbnails.map((file) => `missing thumbnail ${file}`)
   ]);
 }
 
-console.log(`ok: ${sourceFiles.length} source files, ${refs.size} local references, ${renderedLifePhotos.length} life photos`);
+console.log(`ok: ${sourceFiles.length} source files, ${refs.size} local references, ${linkedLifePhotos.length} life photos`);
