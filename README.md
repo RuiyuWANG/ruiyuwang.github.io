@@ -126,7 +126,12 @@ npm run build:keywords
 
 The Life page gallery is generated from public images in `images/oc`. The script
 supports `jpg`, `jpeg`, `png`, `gif`, `webp`, and `svg`. Wide images are placed
-first; regular images are stacked into a four-column desktop layout.
+first; regular images are pre-balanced into a four-column desktop layout so the
+online page keeps a stable order while loading.
+
+For raster images, `npm run build:life` creates compressed WebP thumbnails in
+`images/oc-thumbs` and keeps the original image for the click-to-view full-size
+lightbox. SVG demo images are used directly and do not need thumbnails.
 
 After adding or removing photos:
 

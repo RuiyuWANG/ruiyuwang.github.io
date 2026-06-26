@@ -123,22 +123,31 @@ body.portfolio-site.is-lightbox-open {
 }
 
 .site-nav a {
-  padding: 8px 10px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
   color: rgba(24, 32, 31, 0.78);
-  border-radius: 6px;
+  border: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
   font-size: 14px;
   font-weight: 650;
+  line-height: 1;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--ink);
-  background: var(--paper-deep);
+  background: rgba(244, 246, 248, 0.76);
 }
 
 .site-nav a[aria-current="page"] {
   color: var(--ink);
-  background: var(--paper-deep);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: var(--line);
+  border-bottom-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 -1px 0 rgba(15, 23, 42, 0.03);
 }
 
 .portfolio-site main {
@@ -153,6 +162,7 @@ body.portfolio-site.is-lightbox-open {
   align-items: start;
   width: min(1380px, calc(100% - 96px));
   margin: 0 auto;
+  scroll-margin-top: 92px;
 }
 
 .portfolio-site main.content-column {
@@ -1649,20 +1659,27 @@ body.portfolio-site.is-lightbox-open {
 }
 
 .life-photo-stack {
-  column-count: 4;
-  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
+}
+
+.life-photo-column {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
 }
 
 .life-photo {
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 0 10px;
+  margin: 0;
   overflow: hidden;
   border: 1px solid rgba(15, 23, 42, 0.14);
   border-radius: 8px;
   line-height: 0;
-  break-inside: avoid;
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
   transform: translateZ(0);
   transition:
@@ -2349,7 +2366,7 @@ body.portfolio-site.is-lightbox-open {
     max-height: none;
   }
 
-  .sidebar-photo {
+  .sidebar-photo-button {
     grid-row: span 3;
   }
 
@@ -2384,7 +2401,7 @@ body.portfolio-site.is-lightbox-open {
   }
 
   .life-photo-stack {
-    column-count: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .research-explorer {
@@ -2523,6 +2540,10 @@ body.portfolio-site.is-lightbox-open {
     max-width: 100%;
   }
 
+  .site-shell {
+    gap: 0;
+  }
+
   .brand {
     font-size: 15px;
   }
@@ -2561,6 +2582,10 @@ body.portfolio-site.is-lightbox-open {
     font-size: 17px;
   }
 
+  .hero-section {
+    padding-top: 34px;
+  }
+
   .about-section,
   .themes-section,
   .research-section,
@@ -2574,12 +2599,17 @@ body.portfolio-site.is-lightbox-open {
     align-items: stretch;
   }
 
+  .research-results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .theme-map {
     min-height: 320px;
   }
 
   .life-photo-stack {
-    column-count: 1;
+    grid-template-columns: 1fr;
   }
 
   .theme-wordcloud {
@@ -2683,20 +2713,20 @@ body.portfolio-site.is-lightbox-open {
   }
 
   .education-map {
-    min-height: 330px;
+    min-height: 410px;
   }
 
   .education-china {
-    left: 70%;
+    left: var(--x);
   }
 
   .education-singapore {
-    left: 68%;
+    left: var(--x);
   }
 
   .education-route {
     opacity: 0.72;
-    transform: translateX(-8%) scaleX(0.9);
+    transform: none;
     transform-origin: left center;
   }
 
@@ -2722,37 +2752,253 @@ body.portfolio-site.is-lightbox-open {
 
   .education-label {
     gap: 7px;
-    max-width: 160px;
+    width: 172px;
+    max-width: 172px;
   }
 
   .education-sweden .education-label {
-    right: 24px;
-    top: 0;
+    right: 28px;
+    top: -18px;
   }
 
   .education-china .education-label {
-    bottom: 24px;
+    --label-x: 0;
+    gap: 6px;
+    left: 24px;
+    bottom: 30px;
+    text-align: left;
+    flex-direction: row;
   }
 
   .education-singapore .education-label {
-    right: 24px;
-    top: 52px;
+    --label-x: -50%;
+    left: 0;
+    right: auto;
+    top: 48px;
+    text-align: center;
+    flex-direction: column;
   }
 
   .education-pin span {
+    display: block;
     font-size: 8px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
   }
 
   .education-pin h3 {
+    margin: 2px 0;
     font-size: 11px;
+    line-height: 1.08;
   }
 
   .education-pin p {
-    display: none;
+    display: block;
+    font-size: 9px;
+    line-height: 1.18;
+    white-space: normal;
   }
 
   .profile-sidebar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    gap: 16px;
+    padding: clamp(22px, 7vw, 30px);
+    text-align: center;
+    transition:
+      min-height 520ms ease,
+      padding 520ms ease,
+      gap 520ms ease,
+      box-shadow 520ms ease;
+  }
+
+  .sidebar-photo-button {
+    grid-row: auto;
+    width: min(46vw, 176px);
+    max-width: 176px;
+    transition:
+      width 520ms ease,
+      max-width 520ms ease;
+  }
+
+  .sidebar-photo {
+    border-radius: 16px;
+    transition:
+      border-radius 520ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .sidebar-name {
+    display: block;
+    width: min(100%, 268px);
+    max-width: 100%;
+    font-size: clamp(22px, 5.7vw, 28px);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-wrap: balance;
+    white-space: normal;
+    transition: font-size 520ms ease, line-height 520ms ease;
+  }
+
+  .sidebar-identity {
+    width: 100%;
+    min-width: 0;
+    justify-items: center;
+    gap: 4px;
+    transition: gap 520ms ease;
+  }
+
+  .sidebar-identity p:not(.sidebar-name) {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.38;
+    transition:
+      font-size 520ms ease,
+      line-height 520ms ease,
+      max-width 520ms ease;
+  }
+
+  .sidebar-links {
+    grid-column: auto;
+    grid-template-columns: repeat(4, 40px);
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 4px;
+    padding-top: 0;
+    border-top: 0;
+    transition:
+      gap 520ms ease,
+      margin-top 520ms ease;
+  }
+
+  .sidebar-links-title,
+  .sidebar-link span:last-child {
     display: none;
+  }
+
+  .portfolio-site .sidebar-link {
+    justify-content: center;
+    min-height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    transition:
+      min-height 520ms ease,
+      padding 520ms ease,
+      border-radius 520ms ease,
+      background 180ms ease,
+      color 180ms ease;
+  }
+
+  .sidebar-link-icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    transition:
+      width 520ms ease,
+      height 520ms ease,
+      flex-basis 520ms ease,
+      border-radius 520ms ease;
+  }
+
+  .sidebar-link-icon svg {
+    width: 17px;
+    height: 17px;
+    transition:
+      width 520ms ease,
+      height 520ms ease;
+  }
+
+  body.is-mobile-profile-collapsed .site-shell {
+    gap: 28px;
+  }
+
+  body.is-mobile-profile-collapsed .profile-sidebar {
+    grid-template-columns: 78px minmax(0, 1fr);
+    align-content: start;
+    justify-items: stretch;
+    min-height: 0;
+    gap: 10px 12px;
+    padding: 12px;
+    text-align: left;
+  }
+
+  body.is-mobile-profile-collapse-complete .profile-sidebar {
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-photo-button {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: start;
+    width: 78px;
+    max-width: 78px;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-photo {
+    border-radius: 8px;
+    transition:
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-name {
+    font-size: 20px;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-identity {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-items: start;
+    gap: 2px;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-identity p:not(.sidebar-name) {
+    max-width: none;
+    font-size: 12px;
+    line-height: 1.28;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-links {
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: repeat(4, 30px);
+    justify-content: start;
+    gap: 6px;
+    margin-top: 0;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-link {
+    min-height: 30px;
+    padding: 3px;
+    border-radius: 6px;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-link-icon {
+    flex-basis: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    transition: none;
+  }
+
+  body.is-mobile-profile-collapsed .sidebar-link-icon svg {
+    width: 15px;
+    height: 15px;
+    transition: none;
   }
 }
 
