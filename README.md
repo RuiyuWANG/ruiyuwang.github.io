@@ -2,6 +2,8 @@
 
 Static personal website, hosted at `ruiyuwang.github.io`.
 
+For the website template, check out the branch template.
+
 The root `.nojekyll` file is required because the Life gallery includes image
 filenames that start with `_`; GitHub Pages/Jekyll otherwise hides those files.
 
