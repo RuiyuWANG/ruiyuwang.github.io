@@ -8,17 +8,33 @@ material before publishing.
 The root `.nojekyll` file is kept so GitHub Pages serves filenames that begin
 with `_`, which is common for camera exports.
 
+![Academic portfolio template homepage](images/readme/homepage.png)
+
 ## Features
 
 - Auto-import publications from a Google Scholar profile or a saved Scholar HTML
   page, then rebuild the publication list and keyword data.
+
+  ![Generated publication and keyword section](images/readme/feature-publications.png)
+
 - Interactive keyword cloud generated from paper keywords, with click-to-filter
   publication lookup.
+
+  ![Interactive keyword cloud](images/readme/feature-keyword-cloud.png)
+
 - Photo gallery, scrollable CV page, and compiled Markdown blog page.
+
+  ![Photo gallery, CV page, and Markdown blog preview](images/readme/feature-media.png)
+
 - Localhost-only online text editing with `?edit=1`, backed by
   `data/site-content.json`.
+
+  ![Localhost edit mode with Markdown editor and live preview](images/readme/feature-editing.png)
+
 - Mobile-compatible layout, including the compact profile card, responsive
   navigation, maps, publication cards, and gallery.
+
+  ![Mobile profile card layout](images/readme/feature-mobile.png)
 
 ## Quick Start
 
