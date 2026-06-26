@@ -3,21 +3,51 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const sourcePath = path.join(root, "data", "research-keywords.json");
+const publicationsPath = path.join(root, "data", "publications.json");
 const outputPath = path.join(root, "js", "research-keywords.js");
 
 const source = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const paperEntries = Object.entries(source.papers || {});
+const publications = fs.existsSync(publicationsPath)
+  ? JSON.parse(fs.readFileSync(publicationsPath, "utf8"))
+  : [];
+
+const slugify = (value) => String(value || "")
+  .trim()
+  .toLowerCase()
+  .replace(/&/g, " and ")
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-|-$/g, "");
+
+const unique = (values) => Array.from(new Set(values.filter(Boolean)));
+
+const publicationPapers = {};
+publications.forEach((paper) => {
+  if (!paper.id) {
+    return;
+  }
+
+  publicationPapers[paper.id] = unique([
+    ...(paper.keywords || []).map(slugify),
+    ...(paper.tags || []).map(slugify)
+  ]);
+});
+
+const papers = {
+  ...publicationPapers,
+  ...(source.papers || {})
+};
+const paperEntries = Object.entries(papers);
 const counts = new Map();
 const keywordToPapers = {};
 
 paperEntries.forEach(([, keywords]) => {
-  new Set(keywords).forEach((keyword) => {
+  new Set(keywords.map(slugify)).forEach((keyword) => {
     counts.set(keyword, (counts.get(keyword) || 0) + 1);
   });
 });
 
 paperEntries.forEach(([paperId, keywords]) => {
-  new Set(keywords).forEach((keyword) => {
+  new Set(keywords.map(slugify)).forEach((keyword) => {
     if (!keywordToPapers[keyword]) {
       keywordToPapers[keyword] = [];
     }
@@ -35,7 +65,9 @@ const groupColors = {
   generalization: "#a13d1c",
   visuomotor: "#0f766e",
   reasoning: "#6d28d9",
-  rl: "#7c3aed",
+  language: "#6d28d9",
+  systems: "#475569",
+  evaluation: "#7c3aed",
   other: "#334155"
 };
 
@@ -54,7 +86,10 @@ const keywordDefinitions = new Map();
 
 (source.keywords || []).forEach((keyword) => {
   if (keyword.slug) {
-    keywordDefinitions.set(keyword.slug, keyword);
+    keywordDefinitions.set(slugify(keyword.slug), {
+      ...keyword,
+      slug: slugify(keyword.slug)
+    });
   }
 });
 
@@ -69,7 +104,7 @@ counts.forEach((count, slug) => {
 });
 
 const keywords = Array.from(keywordDefinitions.values())
-  .map((keyword, index) => {
+  .map((keyword) => {
     const count = counts.get(keyword.slug) || 0;
     const ratio = count ? (count - minCount) / spread : 0;
     const scale = 0.88 + ratio * 1.87;
@@ -77,7 +112,7 @@ const keywords = Array.from(keywordDefinitions.values())
 
     return {
       slug: keyword.slug,
-      label: keyword.label,
+      label: keyword.label || toLabel(keyword.slug),
       group: keyword.group || "other",
       count,
       scale: Number(scale.toFixed(2)),
@@ -99,7 +134,7 @@ const keywords = Array.from(keywordDefinitions.values())
 const data = {
   generatedAt: new Date().toISOString(),
   keywords,
-  papers: source.papers || {},
+  papers,
   keywordToPapers
 };
 

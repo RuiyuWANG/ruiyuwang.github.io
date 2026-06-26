@@ -4,29 +4,30 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Ruiyu Wang is a PhD student at KTH Royal Institute of Technology working on robotic manipulation, computer vision, and visuomotor policies.">
+	<meta name="description" content="A polished academic portfolio website template with publications, keyword cloud, CV, contact, and photo gallery pages.">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Ruiyu Wang</title>
+	<title>Academic Portfolio Template</title>
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-	<meta property="og:title" content="Ruiyu Wang">
+	<meta property="og:title" content="Academic Portfolio Template">
 	<meta property="og:type" content="website">
-	<meta property="og:description" content="Robotic manipulation, computer vision, visuomotor policies, and reasoning benchmarks.">
-	<meta property="og:image" content="images/profile_2.jpg">
+	<meta property="og:description" content="A static academic website template for researchers, labs, and students.">
+	<meta property="og:image" content="images/demo/profile.svg">
 	<meta name="twitter:card" content="summary_large_image">
 
-	<link rel="preload" as="image" href="images/profile_2.jpg">
-	<link rel="stylesheet" href="css/portfolio.css?v=20260625-header-text-large">
-	<script src="js/research-keywords.js?v=20260625-keyword-lookup" defer></script>
-	<script src="js/site.js?v=20260625-photo-hover" defer></script>
+	<link rel="preload" as="image" href="images/demo/profile.svg">
+	<link rel="stylesheet" href="css/portfolio.css?v=template-20260626">
+	<script src="js/research-keywords.js?v=template-20260626" defer></script>
+	<script src="js/site.js?v=template-20260626" defer></script>
+	<script src="js/template-editor.js?v=template-20260626" defer></script>
 </head>
 
 <body class="portfolio-site">
 	<header class="site-header" aria-label="Primary navigation">
-		<a class="brand" href="#top" aria-label="Ruiyu Wang home">
-			<span class="brand-mark">RW</span>
-			<span>Ruiyu Wang</span>
+		<a class="brand" href="#top" aria-label="Template homepage">
+			<span class="brand-mark" data-editable="brand.initials">AT</span>
+			<span data-editable="brand.name">Academic Template</span>
 		</a>
 		<nav class="site-nav">
 			<a href="publications.html">Publications</a>
@@ -38,448 +39,323 @@
 
 	<div class="site-shell">
 		<aside class="profile-sidebar" aria-label="Persistent profile links">
-			<a class="sidebar-photo-button" href="images/profile_2.jpg" data-lightbox-src="images/profile_2.jpg" data-lightbox-alt="Ruiyu Wang" aria-haspopup="dialog" aria-label="Open full profile photo">
-				<img class="sidebar-photo" src="images/profile_2.jpg" alt="Ruiyu Wang" width="900" height="900">
+			<a class="sidebar-photo-button" href="images/demo/profile.svg" data-lightbox-src="images/demo/profile.svg" data-lightbox-alt="Demo profile portrait" aria-haspopup="dialog" aria-label="Open full profile photo">
+				<img class="sidebar-photo" src="images/demo/profile.svg" alt="Demo profile portrait" width="900" height="900">
 			</a>
 			<div class="sidebar-identity">
-				<p class="sidebar-name">Ruiyu Wang</p>
-				<p>Ph.D. @ KTH, Sweden</p>
-				<p>Perception, Robot Learning, Computer Vision</p>
+				<p class="sidebar-name" data-editable="profile.name">Dr. Alex Researcher</p>
+				<p data-editable="profile.role">Assistant Professor, Example University</p>
+				<p data-editable="profile.focus">Robot learning, vision, and trustworthy AI</p>
 			</div>
 			<nav class="sidebar-links" aria-label="Profile links">
 				<span class="sidebar-links-title">Follow</span>
-				<a class="sidebar-link scholar-tab" href="https://scholar.google.com/citations?user=YoTCQe4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+				<a class="sidebar-link scholar-tab" href="https://scholar.google.com/" target="_blank" rel="noopener">
 					<span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 2 9l10 6 10-6-10-6Zm-6 9.2V17c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.8l-6 3.6-6-3.6Z"/></svg></span>
 					<span>Google Scholar</span>
 				</a>
-				<a class="sidebar-link linkedin-tab" href="https://www.linkedin.com/in/ruiyu-wang-8ba225208/" target="_blank" rel="noopener">
+				<a class="sidebar-link linkedin-tab" href="https://www.linkedin.com/" target="_blank" rel="noopener">
 					<span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.2 8.8h3.4V20H5.2V8.8Zm1.7-5.4a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM10.8 8.8h3.2v1.5h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V20h-3.4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20h-3.4V8.8Z"/></svg></span>
 					<span>LinkedIn</span>
 				</a>
-				<a class="sidebar-link github-tab" href="https://github.com/ruiyuwang" target="_blank" rel="noopener">
+				<a class="sidebar-link github-tab" href="https://github.com/" target="_blank" rel="noopener">
 					<span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.8 9.8 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.8 1 .8 2.1V21c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg></span>
 					<span>GitHub</span>
 				</a>
-				<a class="sidebar-link email-tab" href="mailto:ruiyuw@kth.se">
+				<a class="sidebar-link email-tab" href="mailto:alex@example.edu">
 					<span class="sidebar-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18v14H3V5Zm2.2 2 6.8 5 6.8-5H5.2Zm13.8 9.8V9.1l-7 5.2-7-5.2v7.7h14Z"/></svg></span>
 					<span>Email</span>
 				</a>
 			</nav>
 		</aside>
 
-	<main id="top" class="content-column">
-		<section class="hero-section" aria-labelledby="intro-title">
-			<div class="hero-content">
-				<p class="eyebrow">Ph.D. Student, KTH Royal Institute of Technology</p>
-				<h1 id="intro-title">Ruiyu Wang</h1>
-				<p class="hero-lede">I study learning-based control and develop data-efficient, generalizable visual representations for embodied systems.</p>
-			</div>
-		</section>
-
-		<section class="quick-stats" aria-label="Research snapshot">
-			<div>
-				<span>2023 - Present</span>
-				<strong>Ph.D. in Computer Science</strong>
-			</div>
-			<div>
-				<span>Core Area</span>
-				<strong>Robot Learning</strong>
-			</div>
-			<div>
-				<span>Interests</span>
-				<strong>Vision, Perception, Generalization</strong>
-			</div>
-		</section>
-
-		<section class="about-section" aria-labelledby="about-title">
-			<div class="section-heading">
-				<p class="eyebrow">About</p>
-				<h2 id="about-title">Robotics, vision, and learning.</h2>
-			</div>
-			<div class="about-copy">
-				<p>
-				I am a Ph.D. student in computer science at KTH, advised by Prof.
-				<a href="https://www.csc.kth.se/~fpokorny/" target="_blank" rel="noopener">Florian T. Pokorny</a>.
-				My research is funded by the
-				<a href="https://cloudgripper.org/" target="_blank" rel="noopener">CloudGripper</a>
-				project of
-				<a href="https://wasp-sweden.org/" target="_blank" rel="noopener">WASP</a>.
-				Before joining KTH, I received an M.Sc. in quantitative finance from the National University of Singapore
-				and a B.Sc. in physics from Peking University.
-			</p>
-			<p>
-				My research focuses on learning-based perception and control for embodied agents in the physical world.
-				I study where and how agents derive state information from visual sensory inputs to support action prediction.
-				A central goal of my work is to improve the data efficiency and
-				out-of-domain generalization of visual representations for robotic decision-making.
-			</p>
-			<p>
-				More broadly, I am also interested in VLM/VLA reasoning and steering.
-			</p>
-			<p>
-				My <a href="cv.html">curriculum vitae</a>.
-			</p>
-			</div>
-		</section>
-
-		<section class="research-section interactive-research-section" id="research" aria-labelledby="research-title">
-			<div class="section-heading">
-				<p class="eyebrow">Research</p>
-				<div class="section-title-row">
-					<h2 id="research-title">Keywords and publications.</h2>
-					<a class="section-link" href="publications.html">View full publication list</a>
+		<main id="top" class="content-column">
+			<section class="hero-section" aria-labelledby="intro-title">
+				<div class="hero-content">
+					<p class="eyebrow" data-editable="hero.eyebrow">Academic Portfolio Template</p>
+					<h1 id="intro-title" data-editable="hero.title">Dr. Alex Researcher</h1>
+					<p class="hero-lede" data-editable="hero.lede">A clean, data-driven website template for research profiles, selected publications, demos, teaching, service, and public contact information.</p>
 				</div>
-				<p class="section-helper">Click a word in the word cloud to view related publications.</p>
-			</div>
-			<div class="research-explorer">
-			<div class="theme-map">
-				<div class="theme-wordcloud" data-wordcloud role="group" aria-label="Research keyword filters"></div>
-			</div>
-			<div class="research-results" data-filter-results data-default-filter="featured">
-				<div class="research-results-heading">
-					<p class="publication-filter-summary" data-filter-summary aria-live="polite">Featured publications</p>
-					<div class="filter-chips" role="group" aria-label="Publication result view">
-						<button class="filter-chip is-active" type="button" data-filter="featured">Featured</button>
-						<button class="filter-chip" type="button" data-filter="all">All</button>
+			</section>
+
+			<section class="quick-stats" aria-label="Research snapshot">
+				<div>
+					<span data-editable="stats.1.label">Current Role</span>
+					<strong data-editable="stats.1.value">Faculty / Research Scientist</strong>
+				</div>
+				<div>
+					<span data-editable="stats.2.label">Core Area</span>
+					<strong data-editable="stats.2.value">Embodied AI</strong>
+				</div>
+				<div>
+					<span data-editable="stats.3.label">Methods</span>
+					<strong data-editable="stats.3.value">Learning, Vision, Reasoning</strong>
+				</div>
+			</section>
+
+			<section class="about-section" aria-labelledby="about-title">
+				<div class="section-heading">
+					<p class="eyebrow">About</p>
+					<h2 id="about-title" data-editable="about.title">A professional academic homepage without the clutter.</h2>
+				</div>
+				<div class="about-copy" data-editable="about.body">
+					<p>I am a demo researcher using this template to present publications, projects, service, teaching, and contact information. Replace this text with your own short biography, current affiliation, and research interests.</p>
+					<p>The template is static enough for GitHub Pages, but structured enough to regenerate publications, keyword clouds, and photo galleries from local data files.</p>
+					<p>My <a href="cv.html">curriculum vitae</a>.</p>
+				</div>
+			</section>
+
+			<section class="research-section interactive-research-section" id="research" aria-labelledby="research-title">
+				<div class="section-heading">
+					<p class="eyebrow">Research</p>
+					<div class="section-title-row">
+						<h2 id="research-title">Keywords and publications.</h2>
+						<a class="section-link" href="publications.html">View full publication list</a>
+					</div>
+					<p class="section-helper">Click a word in the word cloud to view related publications.</p>
+				</div>
+				<div class="research-explorer">
+					<div class="theme-map">
+						<div class="theme-wordcloud" data-wordcloud role="group" aria-label="Research keyword filters"></div>
+					</div>
+					<div class="research-results" data-filter-results data-default-filter="featured">
+						<div class="research-results-heading">
+							<p class="publication-filter-summary" data-filter-summary aria-live="polite">Featured publications</p>
+							<div class="filter-chips" role="group" aria-label="Publication result view">
+								<button class="filter-chip is-active" type="button" data-filter="featured">Featured</button>
+								<button class="filter-chip" type="button" data-filter="all">All</button>
+							</div>
+						</div>
+						<div class="publication-grid">
+							<!-- PUBLICATIONS_SELECTED_START -->
+<article class="publication-card" data-paper-id="adaptive-robot-policies" data-featured-publication="true" data-topic="robotics vision visuomotor generalization conference" data-search="adaptive robot policies from sparse demonstrations alex researcher, taylor demo, and morgan lee international conference on robotics and automation icra 2026 2026 conference robotics vision visuomotor generalization visuomotor-policies data-efficiency manipulation policy-learning">
+						<figure class="publication-thumb">
+							<img src="images/demo/paper-robot.svg" alt="Adaptive Robot Policies from Sparse Demonstrations teaser" loading="lazy">
+						</figure>
+						<div class="publication-body">
+							<div class="publication-kicker">
+								<span>ICRA 2026</span>
+								<span>Conference</span>
+							</div>
+							<h3>Adaptive Robot Policies from Sparse Demonstrations</h3>
+							<p>Alex Researcher, Taylor Demo, and Morgan Lee</p>
+							<div class="publication-links">
+								<a href="https://example.com/adaptive-robot-policies.pdf" target="_blank" rel="noopener">Paper</a>
+							<a href="https://github.com/example/adaptive-robot-policies" target="_blank" rel="noopener">Code</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>This demo paper studies how a robot policy can adapt from a small number of demonstrations while preserving task-relevant visual attention. Replace this abstract with the real paper abstract or leave it blank until the final version is public.</p>
+							</div>
+						</div>
+					</article>
+<article class="publication-card" data-paper-id="visual-world-models" data-featured-publication="true" data-topic="robotics vision systems data-efficiency conference" data-search="visual world models for data-efficient planning jamie chen, alex researcher, and priya kumar conference on robot learning corl 2026 2026 conference robotics vision systems data-efficiency world-models visual-representation planning simulation">
+						<figure class="publication-thumb">
+							<img src="images/demo/paper-vision.svg" alt="Visual World Models for Data-Efficient Planning teaser" loading="lazy">
+						</figure>
+						<div class="publication-body">
+							<div class="publication-kicker">
+								<span>CoRL 2026</span>
+								<span>Conference</span>
+							</div>
+							<h3>Visual World Models for Data-Efficient Planning</h3>
+							<p>Jamie Chen, Alex Researcher, and Priya Kumar</p>
+							<div class="publication-links">
+								<a href="https://example.com/visual-world-models.pdf" target="_blank" rel="noopener">Paper</a>
+							<a href="https://example.com/visual-world-models" target="_blank" rel="noopener">Website</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>This demo entry summarizes a reusable project card with a teaser image, topic tags, links, and an expandable abstract. The publication builder uses this JSON object to render both the homepage and full publication page.</p>
+							</div>
+						</div>
+					</article>
+<article class="publication-card" data-paper-id="reasoning-benchmark" data-featured-publication="true" data-topic="language systems evaluation journal" data-search="a reasoning benchmark for interactive agents morgan lee, sam rivera, and alex researcher transactions on machine learning research tmlr 2025 2025 journal language systems evaluation reasoning language-models benchmark interactive-agents generalization">
+						<figure class="publication-thumb">
+							<img src="images/demo/paper-language.svg" alt="A Reasoning Benchmark for Interactive Agents teaser" loading="lazy">
+						</figure>
+						<div class="publication-body">
+							<div class="publication-kicker">
+								<span>TMLR 2025</span>
+								<span>Journal</span>
+							</div>
+							<h3>A Reasoning Benchmark for Interactive Agents</h3>
+							<p>Morgan Lee, Sam Rivera, and Alex Researcher</p>
+							<div class="publication-links">
+								<a href="https://example.com/reasoning-benchmark.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>This placeholder paper demonstrates how language-model or evaluation work can live alongside robotics publications in the same template. Topic filters and keyword-cloud lookup are driven by the tags and keywords arrays.</p>
+							</div>
+						</div>
+					</article>
+<article class="publication-card" data-paper-id="calibrated-perception" data-topic="robotics vision systems journal" data-search="calibrated perception for reliable field deployment alex researcher and dana smith ieee robotics and automation letters ra-l 2025 2025 journal robotics vision systems calibration perception deployment uncertainty visual-representation">
+						<figure class="publication-thumb">
+							<img src="images/demo/paper-systems.svg" alt="Calibrated Perception for Reliable Field Deployment teaser" loading="lazy">
+						</figure>
+						<div class="publication-body">
+							<div class="publication-kicker">
+								<span>RA-L 2025</span>
+								<span>Journal</span>
+							</div>
+							<h3>Calibrated Perception for Reliable Field Deployment</h3>
+							<p>Alex Researcher and Dana Smith</p>
+							<div class="publication-links">
+								<a href="https://example.com/calibrated-perception.pdf" target="_blank" rel="noopener">Paper</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>Use non-featured entries for papers that should appear in the full publication page but not in the default homepage selection. They still contribute to the keyword cloud and can be found by clicking related words.</p>
+							</div>
+						</div>
+					</article>
+<article class="publication-card" data-paper-id="human-centered-interfaces" data-topic="robotics systems conference" data-search="human-centered interfaces for robot learning systems priya kumar, jamie chen, and alex researcher acm/ieee international conference on human-robot interaction hri 2024 2024 conference robotics systems human-robot-interaction interfaces teaching data-efficiency policy-learning">
+						<figure class="publication-thumb">
+							<img src="images/demo/paper-interface.svg" alt="Human-Centered Interfaces for Robot Learning Systems teaser" loading="lazy">
+						</figure>
+						<div class="publication-body">
+							<div class="publication-kicker">
+								<span>HRI 2024</span>
+								<span>Conference</span>
+							</div>
+							<h3>Human-Centered Interfaces for Robot Learning Systems</h3>
+							<p>Priya Kumar, Jamie Chen, and Alex Researcher</p>
+							<div class="publication-links">
+								<a href="https://example.com/human-centered-interfaces.pdf" target="_blank" rel="noopener">Paper</a>
+							<a href="https://example.com/hri-demo" target="_blank" rel="noopener">Demo</a>
+							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
+							</div>
+							<div class="publication-details publication-abstract" hidden>
+								<p>This entry gives the publication page enough variety to show year grouping, search, topic filters, media thumbnails, and abstract toggles. Replace it with a real paper or remove it from the JSON array.</p>
+							</div>
+						</div>
+					</article>
+							<!-- PUBLICATIONS_SELECTED_END -->
+						</div>
 					</div>
 				</div>
+			</section>
 
-			<div class="publication-grid">
-				<article class="publication-card" data-paper-id="nppc" data-topic="reasoning llms journal conference" data-search="nondeterministic polynomial-time problem challenge ever-scaling reasoning benchmark llms chang yang ruiyu wang junzhe jiang qi jiang qinggang zhang yanchen deng shuxin li shuyue hu bo li florian pokorny xiao huang xinrun wang tmlr 2026">
-					<figure>
-						<img src="images/paper_teaser/nppc.png" alt="NPPC benchmark preview" width="394" height="375" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>TMLR 2026</span>
-							<span>Reasoning</span>
-						</div>
-						<h3>Nondeterministic Polynomial-time Problem Challenge: An Ever-Scaling Reasoning Benchmark for LLMs</h3>
-						<p>Chang Yang<sup>*</sup>, <strong>Ruiyu Wang<sup>*</sup></strong>, Junzhe Jiang, Qi Jiang, Qinggang Zhang, Yanchen Deng, Shuxin Li, Shuyue Hu, Bo Li, Florian T. Pokorny, Xiao Huang, and Xinrun Wang</p>
-						<div class="publication-links">
-							<a href="https://openreview.net/pdf?id=Xb6d5lGLb2" target="_blank" rel="noopener">Paper</a>
-							<a href="https://ruiyuwang.github.io/nppc_leaderboard/" target="_blank" rel="noopener">Website</a>
-							<a href="https://github.com/SMU-DIGA/nppc" target="_blank" rel="noopener">Code</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>Reasoning is the fundamental capability of large language models (LLMs). Due to the rapid progress of LLMs, there are two main issues of current benchmarks: i) these benchmarks can be crushed in a short time (less than 1 year), and ii) these benchmarks may be easily hacked. To handle these issues, we propose the ever-scalingness for building the benchmarks which are scaling over complexity, instance, oversight and coverage. This paper presents Nondeterministic Polynomial-time Problem Challenge (NPPC), an ever-scaling reasoning benchmark for LLMs. Specifically, the NPPC has three main modules: i) npgym, which provides a unified interface of 25 well-known NP-complete problems and can generate any number of instances with any levels of complexities, ii) npsolver, which provides a unified interface to evaluate the problem instances with both online and offline models via APIs and local deployments, respectively, and iii) npeval, which provides the comprehensive and ready-to-use tools to analyze the performances of LLMs over different problems, the number of tokens, the aha moments, the reasoning errors and the solution errors. Extensive experiments over widely-used LLMs demonstrate: i) NPPC can successfully decrease the performances of advanced LLMs to below 10%, demonstrating that NPPC is not crushed by current models, ii) DeepSeek-R1, Claude-3.7-Sonnet, and o1/o3-mini are the most powerful LLMs, where DeepSeek-R1 can outperform Claude-3.7-Sonnet and o1/o3-mini in most NP-complete problems considered, and iii) the numbers of tokens, aha moments in the advanced LLMs, e.g., Claude-3.7-Sonnet and DeepSeek-R1, are observed first to increase and then decrease when the problem instances become more and more difficult. Through continuously scaling analysis, NPPC can provide critical insights into LLMs' reasoning capabilities, exposing fundamental limitations and suggesting future directions for further improvements.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="palm" data-featured-publication="true" data-topic="robotics vision visuomotor generalization journal conference" data-search="palm enhanced generalizability local visuomotor policies perception alignment ruiyu wang zheyu zhuang danica kragic florian pokorny ral 2026">
-					<figure>
-						<img src="images/paper_teaser/palm.png" alt="PALM perception alignment preview" width="3566" height="3389" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>RA-L 2026</span>
-							<span>Generalization</span>
-						</div>
-						<h3>PALM: Enhanced Generalizability for Local Visuomotor Policies via Perception Alignment</h3>
-						<p><strong>Ruiyu Wang*</strong>, Zheyu Zhuang*, Danica Kragic and Florian T. Pokorny</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2601.19514.pdf" target="_blank" rel="noopener">Paper</a>
-							<a href="https://github.com/RuiyuWANG/PALM/tree/main" target="_blank" rel="noopener">Code</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>Generalizing beyond the training domain in image-based behavior cloning remains challenging. Existing methods address individual axes of generalization, workspace shifts, viewpoint changes, and cross-embodiment transfer, yet they are typically developed in isolation and often rely on complex pipelines. We introduce PALM (Perception Alignment for Local Manipulation), which leverages the invariance of local action distributions between out-of-distribution (OOD) and demonstrated domains to address these OOD shifts concurrently, without additional input modalities, model changes, or data collection. PALM modularizes the manipulation policy into coarse global components and a local policy for fine-grained actions. We reduce the discrepancy between in-domain and OOD inputs at the local policy level by enforcing local visual focus and consistent proprioceptive representation, allowing the policy to retrieve invariant local actions under OOD conditions. Experiments show that PALM limits OOD performance drops to 8% in simulation and 24% in the real world, compared to 45% and 77% for baselines.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="paca" data-topic="robotics vision data-efficiency journal conference" data-search="paca perspective-aware cross-attention representation zero-shot scene rearrangement shutong jin ruiyu wang kuangyi chen florian pokorny wacv 2025">
-					<figure>
-						<img src="images/paper_teaser/PACA.png" alt="PACA scene rearrangement preview" width="1499" height="411" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>WACV 2025</span>
-							<span>Zero-Shot</span>
-						</div>
-						<h3>PACA: Perspective-Aware Cross-Attention Representation for Zero-Shot Scene Rearrangement</h3>
-						<p>Shutong Jin*, <strong>Ruiyu Wang*</strong>, Kuangyi Chen and Florian T. Pokorny</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2410.22059.pdf" target="_blank" rel="noopener">Paper</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>Scene rearrangement, like table tidying, is a challenging task in robotic manipulation due to the complexity of predicting diverse object arrangements. Web-scale trained generative models such as Stable Diffusion can aid by generating natural scenes as goals. To facilitate robot execution, object-level representations must be extracted to match the real scenes with the generated goals and to calculate object pose transformations. Current methods typically use a multi-step design that involves separate models for generation, segmentation, and feature encoding, which can lead to a low success rate due to error accumulation. Furthermore, they lack control over the viewing perspectives of the generated goals, restricting the tasks to 3-DoF settings. In this paper, we propose PACA, a zero-shot pipeline for scene rearrangement that leverages perspective-aware cross-attention representation derived from Stable Diffusion. Specifically, we develop a representation that integrates generation, segmentation, and feature encoding into a single step to produce object-level representations. Additionally, we introduce perspective control, thus enabling the matching of 6-DoF camera views and extending past approaches that were limited to 3-DoF top-down views. The efficacy of our method is demonstrated through its zero-shot performance in real robot experiments across various scenes, achieving an average matching accuracy and execution success rate of 87% and 67%, respectively.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="donas" data-topic="rl journal conference" data-search="double oracle neural architecture search game theoretic deep learning models aye phyu phyu aung xinrun wang ruiyu wang hau chan bo an xiaoli li j senthilnath ieee transactions image processing 2025">
-					<figure>
-						<img src="images/paper_teaser/donas.png" alt="Double Oracle Neural Architecture Search preview" width="638" height="356" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>TIP 2025</span>
-							<span>RL</span>
-						</div>
-						<h3>Double Oracle Neural Architecture Search for Game Theoretic Deep Learning Models</h3>
-						<p>Aye Phyu Phyu Aung, Xinrun Wang, <strong>Ruiyu Wang</strong>, Hau Chan, Bo An, Xiaoli Li and J. Senthilnath</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2410.04764.pdf" target="_blank" rel="noopener">Paper</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>In this paper, we propose a new approach to train deep learning models using game theory concepts including Generative Adversarial Networks (GANs) and Adversarial Training (AT) where we deploy a double-oracle framework using best response oracles. GAN is essentially a two-player zero-sum game between the generator and the discriminator. The same concept can be applied to AT with attacker and classifier as players. Training these models is challenging as a pure Nash equilibrium may not exist and even finding the mixed Nash equilibrium is difficult as training algorithms for both GAN and AT have a large-scale strategy space. Extending our preliminary model DO-GAN, we propose the methods to apply the double oracle framework concept to Adversarial Neural Architecture Search (NAS for GAN) and Adversarial Training (NAS for AT) algorithms. We first generalize the players' strategies as the trained models of generator and discriminator from the best response oracles. We then compute the meta-strategies using a linear program. For scalability of the framework where multiple network models of best responses are stored in the memory, we prune the weakly-dominated players' strategies to keep the oracles from becoming intractable. Finally, we conduct experiments on MNIST, CIFAR-10 and TinyImageNet for DONAS-GAN. We also evaluate the robustness under FGSM and PGD attacks on CIFAR-10, SVHN and TinyImageNet for DONAS-AT. We show that all our variants have significant improvements in both subjective qualitative evaluation and quantitative metrics, compared with their respective base architectures.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="visual-encoder" data-featured-publication="true" data-topic="robotics vision visuomotor journal conference" data-search="feature extractor policy learner rethinking role visual encoders visuomotor policies ruiyu wang zheyu zhuang shutong jin nils ingelhag danica kragic florian pokorny icra 2025">
-					<figure>
-						<img src="images/paper_teaser/visual_encoder.png" alt="Visual encoder policy preview" width="542" height="341" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>ICRA 2025</span>
-							<span>Vision</span>
-						</div>
-						<h3>Feature Extractor or Policy Learner: Rethinking the Role of Visual Encoders in Visuomotor Policies</h3>
-						<p><strong>Ruiyu Wang</strong>, Zheyu Zhuang, Shutong Jin, Nils Ingelhag, Danica Kragic and Florian T. Pokorny</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2409.20248.pdf" target="_blank" rel="noopener">Paper</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>An end-to-end (E2E) visuomotor policy is typically treated as a unified whole, but recent approaches using out-of-domain (OOD) data to pretrain the visual encoder have cleanly separated the visual encoder from the network, with the remainder referred to as the policy. We propose Visual Alignment Testing, an experimental framework designed to evaluate the validity of this functional separation. Our results indicate that in E2E-trained models, visual encoders actively contribute to decision-making resulting from motor data supervision, contradicting the assumed functional separation. In contrast, OOD-pretrained models, where encoders lack this capability, experience an average performance drop of 42% in our benchmark results, compared to the state-of-the-art performance achieved by E2E policies. We believe this initial exploration of visual encoders' role can provide a first step towards guiding future pretraining methods to address their decision-making ability, such as developing task-conditioned or context-aware encoders.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="mirrorduo" data-featured-publication="true" data-topic="robotics visuomotor data-efficiency journal conference" data-search="mirrorduo reflection-consistent visuomotor learning mirrored demonstration pairs zheyu zhuang ruiyu wang giovanni luca marchetti florian pokorny danica kragic corl 2025">
-					<figure>
-						<img src="images/paper_teaser/mirrorduo.gif?v=20260625-mirrorduo-update" alt="MirrorDuo mirrored demonstration preview" width="272" height="292" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>CoRL 2025</span>
-							<span>Data Efficiency</span>
-						</div>
-						<h3>MirrorDuo: Reflection-Consistent Visuomotor Learning from Mirrored Demonstration Pairs</h3>
-						<p>Zheyu Zhuang*, <strong>Ruiyu Wang*</strong>, Giovanni Luca Marchetti, Florian T. Pokorny and Danica Kragic</p>
-						<div class="publication-links">
-							<a href="https://openreview.net/pdf?id=cUeY476ohd" target="_blank" rel="noopener">Paper</a>
-							<a href="https://github.com/zheyu-zhuang/mirror-duo" target="_blank" rel="noopener">Code</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>Image-based behaviour cloning leverages demonstrations captured from ubiquitous RGB cameras, enabling impressive visuomotor performance. However, it remains constrained by the cost of collecting sufficiently diverse demonstrations, especially for generalizing across workspace variations. We propose MirrorDuo, a mirroring-based formulation that operates on image, proprioception, and full 6-DoF end-effector action tuples, generating a mirrored counterpart for each original demonstration, effectively achieving "collect one, get one for free." It can be applied as a data augmentation strategy for existing learning pipelines, such as standard behaviour cloning or diffusion policy, or as a structural prior for reflection-equivariant policy networks. By leveraging the overlap between the original and mirrored domains, MirrorDuo achieves significantly improved performance under the same data budget when demonstrations are evenly distributed across both sides of the workspace. When demonstrations are confined to one side, MirrorDuo enables efficient skill transfer to the mirrored workspace with as few as zero or just 5 demonstrations in the target arrangement.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="realcraft" data-topic="vision video journal conference" data-search="realcraft attention control tool zero-shot consistent video editing shutong jin ruiyu wang florian pokorny iconip 2025">
-					<figure>
-						<img src="images/paper_teaser/realcraft.png" alt="RealCraft video editing preview" width="953" height="845" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>ICONIP 2025</span>
-							<span>Zero-Shot</span>
-						</div>
-						<h3>RealCraft: Attention Control as A Tool for Zero-Shot Consistent Video Editing</h3>
-						<p>Shutong Jin, <strong>Ruiyu Wang</strong> and Florian T. Pokorny</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2312.12635.pdf" target="_blank" rel="noopener">Paper</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>Even though large-scale text-to-image generative models show promising performance in synthesizing high-quality images, applying these models directly to image editing remains a significant challenge. This challenge is further amplified in video editing due to the additional dimension of time. This is especially the case for editing real-world videos as it necessitates maintaining a stable structural layout across frames while executing localized edits without disrupting the existing content. In this paper, we propose RealCraft, an attention-control-based method for zero-shot real-world video editing. By swapping cross-attention for new feature injection and relaxing spatial-temporal attention of the editing object, we achieve localized shape-wise edit along with enhanced temporal consistency. Our model directly uses Stable Diffusion and operates without the need for additional information. We showcase the proposed zero-shot attention-control-based method across a range of videos, demonstrating shape-wise, time-consistent and parameter-free editing in videos of up to 64 frames.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="saga" data-topic="robotics vision generalization visuomotor journal conference" data-search="enhancing visual domain robustness behaviour cloning saliency-guided augmentation zheyu zhuang ruiyu wang nils ingelhag ville kyrki danica kragic corl 2024">
-					<figure>
-						<img src="images/paper_teaser/SaGA.png" alt="SaGA augmentation preview" width="815" height="708" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>CoRL 2024</span>
-							<span>Generalization</span>
-						</div>
-						<h3>Enhancing Visual Domain Robustness in Behaviour Cloning via Saliency-Guided Augmentation</h3>
-						<p>Zheyu Zhuang, <strong>Ruiyu Wang</strong>, Nils Ingelhag, Ville Kyrki and Danica Kragic</p>
-						<div class="publication-links">
-							<a href="https://openreview.net/pdf?id=CskuWHDBAr" target="_blank" rel="noopener">Paper</a>
-							<a href="https://github.com/Zheyu-Zhuang/RoboSaGA" target="_blank" rel="noopener">Code</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>In vision-based behaviour cloning (BC), traditional image-level augmentation methods such as pixel shifting enhance in-domain performance but often struggle with visual domain shifts, including distractors, occlusion, and changes in lighting and backgrounds. Conversely, superimposition-based augmentation, proven effective in computer vision, improves model generalisability by blending training images and out-of-domain images. Despite its potential, the applicability of these methods to vision-based BC remains unclear due to the unique challenges posed by BC demonstrations; specifically, preserving task-critical scene semantics, spatial-temporal relationships, and agent-target interactions is crucial. To address this, we introduce RoboSaGA, a context-aware approach that dynamically adjusts augmentation intensity per pixel based on input saliency derived from the policy. This method ensures aggressive augmentation within task-trivial areas without compromising task-critical information. Furthermore, RoboSaGA seamlessly integrates into existing network architectures without the need for structural changes or additional learning objectives. Our empirical evaluations across both simulated and real-world settings demonstrate that RoboSaGA not only maintains in-domain performance but significantly improves resilience to distractors and background variations.</p>
-						</div>
-					</div>
-				</article>
-
-				<article class="publication-card" data-paper-id="push1k" data-topic="robotics vision visuomotor journal conference" data-search="physics background attributes impact video transformers robotic manipulation case study planar pushing shutong jin ruiyu wang muhammad zahid florian pokorny iros 2024">
-					<figure>
-						<img src="images/paper_teaser/push1k.gif" alt="Planar pushing dataset preview" width="2500" height="1406" loading="lazy">
-					</figure>
-					<div class="publication-body">
-						<div class="publication-kicker">
-							<span>IROS 2024</span>
-							<span>Vision</span>
-						</div>
-						<h3>How Physics and Background Attributes Impact Video Transformers in Robotic Manipulation: A Case Study on Planar Pushing</h3>
-						<p>Shutong Jin, <strong>Ruiyu Wang</strong>, Muhammad Zahid and Florian T. Pokorny</p>
-						<div class="publication-links">
-							<a href="https://arxiv.org/pdf/2310.02044.pdf" target="_blank" rel="noopener">Paper</a>
-							<button class="publication-toggle" type="button" aria-expanded="false" data-collapsed-label="Abstract" data-expanded-label="Hide abstract">Abstract</button>
-						</div>
-						<div class="publication-details publication-abstract" hidden>
-							<p>As model and dataset sizes continue to scale in robot learning, the need to understand how the composition and properties of a dataset affect model performance becomes increasingly urgent to ensure cost-effective data collection and model performance. In this work, we empirically investigate how physics attributes (color, friction coefficient, shape) and scene background characteristics, such as the complexity and dynamics of interactions with background objects, influence the performance of Video Transformers in predicting planar pushing trajectories. We investigate three primary questions: How do physics attributes and background scene characteristics influence model performance? What kind of changes in attributes are most detrimental to model generalization? What proportion of fine-tuning data is required to adapt models to novel scenarios? To facilitate this research, we present CloudGripper-Push-1K, a large real-world vision-based robot pushing dataset comprising 1278 hours and 460,000 videos of planar pushing interactions with objects with different physics and background attributes. We also propose Video Occlusion Transformer (VOT), a generic modular video-transformer-based trajectory prediction framework which features 3 choices of 2D-spatial encoders as the subject of our case study. The dataset and source code are available at https://cloudgripper.org.</p>
-						</div>
-					</div>
-				</article>
-
+			<section class="timeline-section education-section" aria-labelledby="education-title">
+				<div class="section-heading">
+					<p class="eyebrow">Path</p>
+					<h2 id="education-title" data-editable="education.title">Academic pathway.</h2>
 				</div>
-			<p class="empty-state" hidden>No publications match the current filter.</p>
-			</div>
-			</div>
-		</section>
-
-		<section class="timeline-section education-section" id="education" aria-labelledby="education-title">
-			<div class="section-heading">
-				<p class="eyebrow">Education</p>
-				<h2 id="education-title">Educational pathway.</h2>
-			</div>
-				<div class="education-map" aria-label="Academic path across China, Singapore, and Sweden">
-					<img class="world-map-image" src="images/world_map.png" alt="" aria-hidden="true" loading="lazy">
-					<svg class="education-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-						<path class="route-line" d="M79 30 C82 39 82 50 77 54 C69 47 62 31 54.5 21.5" />
-						<circle class="route-point" cx="79" cy="30" r="1.5"/>
-						<circle class="route-point" cx="77" cy="54" r="1.5"/>
-						<circle class="route-point" cx="54.5" cy="21.5" r="1.5"/>
-				</svg>
-
-				<article class="education-pin education-china" style="--x: 79%; --y: 30%;">
-					<span class="education-dot" aria-hidden="true"></span>
-					<div class="education-label">
-						<a class="education-logo" href="https://english.pku.edu.cn/" target="_blank" rel="noopener" aria-label="Peking University">
-							<img src="images/pku.png" alt="Peking University logo" width="48" height="48" loading="lazy">
-						</a>
-						<div class="education-copy">
-							<span>2017.09 - 2021.07</span>
-							<h3><a href="https://english.pku.edu.cn/" target="_blank" rel="noopener">Peking University</a></h3>
-							<p>B.Sc. in Physics, China</p>
+				<div class="education-map" aria-label="Academic pathway map">
+					<img class="world-map-image" src="images/demo/world-map.svg" alt="" aria-hidden="true" loading="lazy">
+					<svg class="education-route" viewBox="0 0 100 52" aria-hidden="true" focusable="false">
+						<path class="route-line" d="M22 24 C38 12 55 18 64 30 S78 39 84 28"/>
+					</svg>
+					<article class="education-pin education-china" style="--x: 22%; --y: 24%;">
+						<span class="education-dot" aria-hidden="true"></span>
+						<div class="education-label">
+							<span class="education-logo"><img src="images/demo/logo-bachelor.svg" alt=""></span>
+							<div class="education-copy">
+								<span data-editable="education.1.years">2014 - 2018</span>
+								<h3 data-editable="education.1.degree">B.Sc. in Computer Science</h3>
+								<p data-editable="education.1.place">Example College, City</p>
+							</div>
 						</div>
-					</div>
-				</article>
-
-				<article class="education-pin education-singapore" style="--x: 77%; --y: 54%;">
-					<span class="education-dot" aria-hidden="true"></span>
-					<div class="education-label">
-						<a class="education-logo" href="https://www.nus.edu.sg/" target="_blank" rel="noopener" aria-label="National University of Singapore">
-							<img src="images/nus_v.jpg" alt="NUS logo" width="48" height="48" loading="lazy">
-						</a>
-						<div class="education-copy">
-							<span>2021.08 - 2023.01</span>
-							<h3><a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a></h3>
-							<p>M.Sc. in Quantitative Finance, Singapore</p>
+					</article>
+					<article class="education-pin education-singapore" style="--x: 64%; --y: 30%;">
+						<span class="education-dot" aria-hidden="true"></span>
+						<div class="education-label">
+							<span class="education-logo"><img src="images/demo/logo-master.svg" alt=""></span>
+							<div class="education-copy">
+								<span data-editable="education.2.years">2018 - 2020</span>
+								<h3 data-editable="education.2.degree">M.Sc. in Robotics</h3>
+								<p data-editable="education.2.place">Demo Institute, City</p>
+							</div>
 						</div>
-					</div>
-				</article>
-
-				<article class="education-pin education-sweden" style="--x: 54.5%; --y: 21.5%;">
-					<span class="education-dot" aria-hidden="true"></span>
-					<div class="education-label">
-						<a class="education-logo" href="https://www.kth.se/en" target="_blank" rel="noopener" aria-label="KTH Royal Institute of Technology">
-							<img src="images/kth.png?v=20260625-kth-logo" alt="KTH logo" width="48" height="48" loading="lazy">
-						</a>
-						<div class="education-copy">
-							<span>2023.03 - Present</span>
-							<h3><a href="https://www.kth.se/en" target="_blank" rel="noopener">KTH Royal Institute of Technology</a></h3>
-							<p>Ph.D. in Computer Science, Sweden</p>
+					</article>
+					<article class="education-pin education-sweden" style="--x: 84%; --y: 28%;">
+						<span class="education-dot" aria-hidden="true"></span>
+						<div class="education-label">
+							<span class="education-logo"><img src="images/demo/logo-phd.svg" alt=""></span>
+							<div class="education-copy">
+								<span data-editable="education.3.years">2020 - Present</span>
+								<h3 data-editable="education.3.degree">Ph.D. in Artificial Intelligence</h3>
+								<p data-editable="education.3.place">Example University, City</p>
+							</div>
 						</div>
-					</div>
-				</article>
-			</div>
-		</section>
+					</article>
+				</div>
+			</section>
 
-		<section class="service-section" id="service" aria-labelledby="service-title">
-			<div class="section-heading">
-				<p class="eyebrow">Service</p>
-				<h2 id="service-title">Academic activities.</h2>
-			</div>
-			<div class="service-grid">
-				<article>
-					<span>Reviewer</span>
-					<p>IEEE T-RO (2 times), CoRL (2025, 2026), ICRA (2026), IROS (2025, 2026)</p>
-				</article>
-				<article>
-					<span>Teaching Assistant</span>
-					<p><a href="https://www.kth.se/student/kurser/kurs/DD2380?l=en" target="_blank" rel="noopener">DD2380 Artificial Intelligence</a> (Fall 2023, Fall 2024, Fall 2025)</p>
-					<p><a href="https://www.kth.se/student/kurser/kurs/DD2421?l=en" target="_blank" rel="noopener">DD2421 Machine Learning</a> (Fall 2023, Fall 2024)</p>
-					<p><a href="https://www.kth.se/student/kurser/kurs/DD2610?l=en" target="_blank" rel="noopener">DD2610 Deep Learning</a> (Fall 2025)</p>
-				</article>
-				<article>
-					<span>Demo</span>
-					<p>Researcher Demo, CoRL 2025 <a href="https://openreview.net/pdf?id=pvwahDHe6y" target="_blank" rel="noopener">CloudGripper</a></p>
-				</article>
-				<article>
-					<span>Supervision</span>
-					<p>Master's Thesis Advisor for <a href="https://www.linkedin.com/in/gabriel-c-batista/" target="_blank" rel="noopener">Gabriel Barista</a></p>
-				</article>
-			</div>
-		</section>
+			<section class="service-section" aria-labelledby="service-title">
+				<div class="section-heading">
+					<p class="eyebrow">Activities</p>
+					<h2 id="service-title" data-editable="service.title">Academic and professional activities.</h2>
+				</div>
+				<div class="service-grid">
+					<article>
+						<span>Reviewer</span>
+						<p data-editable="service.review">Reviewer for selected journals and conferences in robotics, machine learning, and computer vision.</p>
+					</article>
+					<article>
+						<span>Teaching</span>
+						<p data-editable="service.teaching">Instructor or teaching assistant for machine learning, deep learning, robotics, or AI courses.</p>
+					</article>
+					<article>
+						<span>Demos</span>
+						<p data-editable="service.demos">Research demonstrations, tutorials, open-source releases, and project websites.</p>
+					</article>
+					<article>
+						<span>Supervision</span>
+						<p data-editable="service.supervision">Mentoring undergraduate, master, or doctoral students on research projects.</p>
+					</article>
+				</div>
+			</section>
 
-		<section class="contact-section" id="contact" aria-labelledby="contact-title">
-			<div class="section-heading">
-				<p class="eyebrow">Contact</p>
-				<h2 id="contact-title">Get in touch.</h2>
-			</div>
-			<div class="contact-panel">
-				<article class="contact-card contact-email-card">
-					<span>Email</span>
-					<div class="contact-email-row">
-						<a class="contact-email" href="mailto:ruiyuw@kth.se">ruiyuw [at] kth [dot] se</a>
-						<button class="copy-email" type="button" data-email="ruiyuw@kth.se">copy</button>
+			<section class="contact-section" id="contact" aria-labelledby="contact-title">
+				<div class="section-heading">
+					<p class="eyebrow">Contact</p>
+					<h2 id="contact-title" data-editable="contact.title">Get in touch.</h2>
+				</div>
+				<div class="contact-panel">
+					<article class="contact-card contact-email-card">
+						<span>Email</span>
+						<div class="contact-email-row">
+							<a class="contact-email" href="mailto:alex@example.edu">alex [at] example.edu</a>
+							<button class="copy-email" type="button" data-email="alex@example.edu">Copy</button>
+						</div>
+					</article>
+					<article class="contact-card">
+						<span>Affiliation</span>
+						<p><a href="https://example.edu/" target="_blank" rel="noopener" data-editable="contact.affiliation">Department of Computer Science, Example University</a></p>
+					</article>
+					<div class="contact-links" aria-label="External profile links">
+						<a class="contact-link scholar-tab" href="https://scholar.google.com/" target="_blank" rel="noopener">
+							<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 2 9l10 6 10-6-10-6Zm-6 9.2V17c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.8l-6 3.6-6-3.6Z"/></svg></span>
+							<span>Google Scholar</span>
+						</a>
+						<a class="contact-link linkedin-tab" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+							<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.2 8.8h3.4V20H5.2V8.8Zm1.7-5.4a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM10.8 8.8h3.2v1.5h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V20h-3.4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20h-3.4V8.8Z"/></svg></span>
+							<span>LinkedIn</span>
+						</a>
+						<a class="contact-link github-tab" href="https://github.com/" target="_blank" rel="noopener">
+							<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.8 9.8 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.8 1 .8 2.1V21c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg></span>
+							<span>GitHub</span>
+						</a>
 					</div>
-				</article>
-				<article class="contact-card">
-					<span>Affiliation</span>
-					<p><a href="https://www.kth.se/profile/ruiyuw" target="_blank" rel="noopener">Department of Robotics, Perception and Learning</a>, KTH, Stockholm</p>
-					<!-- <p>Stockholm, Sweden</p> -->
-				</article>
-				<nav class="contact-links" aria-label="External contact links">
-					<a class="contact-link scholar-tab" href="https://scholar.google.com/citations?user=YoTCQe4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
-						<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 2 9l10 6 10-6-10-6Zm-6 9.2V17c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.8l-6 3.6-6-3.6Z"/></svg></span>
-						<span>Google Scholar</span>
-					</a>
-					<a class="contact-link linkedin-tab" href="https://www.linkedin.com/in/ruiyu-wang-8ba225208/" target="_blank" rel="noopener">
-						<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.2 8.8h3.4V20H5.2V8.8Zm1.7-5.4a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM10.8 8.8h3.2v1.5h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V20h-3.4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20h-3.4V8.8Z"/></svg></span>
-						<span>LinkedIn</span>
-					</a>
-					<a class="contact-link github-tab" href="https://github.com/ruiyuwang" target="_blank" rel="noopener">
-						<span class="contact-link-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.8 9.8 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.8 1 .8 2.1V21c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg></span>
-						<span>GitHub</span>
-					</a>
-				</nav>
-			</div>
-		</section>
-	</main>
+				</div>
+			</section>
+		</main>
 	</div>
 
-	<div class="photo-lightbox" data-photo-lightbox role="dialog" aria-modal="true" aria-label="Profile photo preview" hidden>
-		<button class="photo-lightbox-backdrop" type="button" data-lightbox-close aria-label="Close profile photo preview"></button>
+	<footer class="site-footer">
+		<p data-editable="footer.note">Built from the Academic Portfolio Template.</p>
+		<a href="#top">Back to top</a>
+	</footer>
+
+	<div class="photo-lightbox" data-photo-lightbox role="dialog" aria-modal="true" aria-label="Photo preview" hidden>
+		<button class="photo-lightbox-backdrop" type="button" data-lightbox-close aria-label="Close photo preview"></button>
 		<div class="photo-lightbox-frame">
 			<img class="photo-lightbox-image" data-lightbox-image src="" alt="">
-			<button class="photo-lightbox-close" type="button" data-lightbox-close aria-label="Close profile photo preview">
+			<button class="photo-lightbox-close" type="button" data-lightbox-close aria-label="Close photo preview">
 				<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6 6.4 5Z"/></svg>
 			</button>
 		</div>
 	</div>
-
-	<footer class="site-footer">
-		<p>&copy; 2026 Ruiyu Wang</p>
-		<a href="#top">Back to top</a>
-	</footer>
 </body>
 </html>

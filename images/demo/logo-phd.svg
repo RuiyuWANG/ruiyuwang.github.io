@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Doctoral institution placeholder logo</title>
+  <circle cx="64" cy="64" r="60" fill="#9a3412"/>
+  <path d="M64 25 28 45l36 20 36-20-36-20Zm-22 35v22c0 9 10 17 22 17s22-8 22-17V60L64 72 42 60Z" fill="#fff"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Reliable systems teaser placeholder</title>
+  <rect width="1200" height="675" fill="#f6f8fb"/>
+  <g fill="#fff" stroke="#cbd5e1" stroke-width="4">
+    <rect x="150" y="160" width="260" height="210" rx="18"/>
+    <rect x="470" y="160" width="260" height="210" rx="18"/>
+    <rect x="790" y="160" width="260" height="210" rx="18"/>
+  </g>
+  <g fill="#0f766e">
+    <circle cx="280" cy="265" r="62"/>
+    <rect x="548" y="215" width="104" height="104" rx="20"/>
+    <path d="M920 202 985 332H855l65-130Z"/>
+  </g>
+  <path d="M280 455h640" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M280 455c126-80 208 78 320 0s214-80 320 0" fill="none" stroke="#1d4ed8" stroke-width="14" stroke-linecap="round"/>
+  <text x="150" y="105" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">Reliable deployment</text>
+  <text x="150" y="590" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="28">Calibration, uncertainty, and field robustness</text>
+</svg>

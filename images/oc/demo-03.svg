@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-labelledby="title">
+  <title id="title">Gallery placeholder three</title>
+  <rect width="900" height="1100" fill="#ecfdf5"/>
+  <rect x="85" y="110" width="730" height="720" rx="30" fill="#ccfbf1"/>
+  <g fill="#0f766e">
+    <circle cx="300" cy="360" r="92"/>
+    <circle cx="520" cy="470" r="126"/>
+    <circle cx="650" cy="300" r="64"/>
+  </g>
+  <path d="M190 720h520" stroke="#0f172a" stroke-width="28" stroke-linecap="round"/>
+  <text x="85" y="990" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="42">Photo 03</text>
+</svg>

@@ -4,21 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Blog post template for Ruiyu Wang.">
+	<meta name="description" content="Markdown blog post template for the Academic Portfolio Template.">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Blog | Ruiyu Wang</title>
+	<title>Blog | Academic Portfolio Template</title>
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-	<link rel="stylesheet" href="css/portfolio.css?v=20260625-header-text-large">
-	<script src="js/site.js?v=20260625-photo-hover" defer></script>
+	<link rel="stylesheet" href="css/portfolio.css?v=template-20260626">
+	<script src="js/site.js?v=template-20260626" defer></script>
+	<script src="js/template-editor.js?v=template-20260626" defer></script>
 </head>
 
 <body class="portfolio-site">
 	<header class="site-header" aria-label="Primary navigation">
-		<a class="brand" href="index.html" aria-label="Ruiyu Wang home">
-			<span class="brand-mark">RW</span>
-			<span>Ruiyu Wang</span>
+		<a class="brand" href="index.html" aria-label="Template homepage">
+			<span class="brand-mark" data-editable="brand.initials">AT</span>
+			<span data-editable="brand.name">Academic Template</span>
 		</a>
 		<nav class="site-nav">
 			<a href="publications.html">Publications</a>
@@ -31,8 +32,8 @@
 	<main class="blog-page-main">
 		<section class="page-hero blog-page-hero" aria-labelledby="blog-title">
 			<p class="eyebrow">Writing template</p>
-			<h1 id="blog-title">Blog</h1>
-			<p>A Markdown workspace for technical notes, paper stories, experiment logs, and visual essays.</p>
+			<h1 id="blog-title" data-editable="blog.title">Blog</h1>
+			<p data-editable="blog.intro">A Markdown workspace for technical notes, paper stories, experiment logs, and visual essays. The tab is hidden from the main navigation until you decide to publish writing.</p>
 		</section>
 
 		<section class="blog-template-section" aria-label="Markdown blog post template">
@@ -51,11 +52,11 @@
 				</div>
 				<textarea class="blog-markdown-input" data-markdown-editor spellcheck="false"># A technical note title
 
-Short lead paragraph for the idea. Use this space for research notes, paper intuition, or experiment logs.
+Short lead paragraph for the idea. Use this space for research notes, paper intuition, experiment logs, or visual essays.
 
 ## Core idea
 
-The template supports **bold text**, *emphasis*, inline code like `policy.step(obs)`, links such as [CloudGripper](https://cloudgripper.org/), and inline formulas like $a_t = \pi_\theta(o_t)$.
+The template supports **bold text**, *emphasis*, inline code like `policy.step(obs)`, links such as [Example Lab](https://example.edu/), and inline formulas like $a_t = \pi_\theta(o_t)$.
 
 $$
 L(\theta) = \sum_t ||a_t - \pi_\theta(o_t)||_2^2
@@ -73,13 +74,11 @@ def rollout(policy, observations):
 
 ## Visual note
 
-![PALM teaser](images/paper_teaser/palm.png)
+![Demo paper teaser](images/demo/paper-robot.svg)
 
 ## Video note
 
 @[Robot demo](https://www.youtube.com/embed/VIDEO_ID)
-
-> Replace the placeholders with a real image path, video path, or embed URL when turning this into a post.
 </textarea>
 			</div>
 

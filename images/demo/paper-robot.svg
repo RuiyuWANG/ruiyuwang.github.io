@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Robot policy teaser placeholder</title>
+  <rect width="1200" height="675" fill="#f6f8fb"/>
+  <path d="M140 520h920" stroke="#cbd5e1" stroke-width="6"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 500c80-120 172-180 276-180 104 0 186 48 246 144" stroke="#0f766e" stroke-width="34"/>
+    <path d="M545 320 720 176" stroke="#1d4ed8" stroke-width="42"/>
+    <path d="M720 176h140" stroke="#1d4ed8" stroke-width="42"/>
+    <path d="M862 176l82 82" stroke="#9a3412" stroke-width="30"/>
+  </g>
+  <circle cx="270" cy="500" r="52" fill="#0f172a"/>
+  <circle cx="545" cy="320" r="58" fill="#0f172a"/>
+  <circle cx="720" cy="176" r="48" fill="#0f172a"/>
+  <circle cx="860" cy="176" r="40" fill="#0f172a"/>
+  <rect x="902" y="240" width="92" height="70" rx="12" fill="#0f172a"/>
+  <text x="140" y="125" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="800">Adaptive robot policies</text>
+  <text x="142" y="178" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="28">Demo teaser image</text>
+</svg>

@@ -1,325 +1,35 @@
 window.RESEARCH_KEYWORD_DATA = {
-  "generatedAt": "2026-06-25T12:54:44.649Z",
+  "generatedAt": "2026-06-26T14:16:08.712Z",
   "keywords": [
-    {
-      "slug": "visuomotor-policies",
-      "label": "Visuomotor Policies",
-      "group": "visuomotor",
-      "count": 4,
-      "scale": 2,
-      "highlight": true,
-      "color": "#0f766e",
-      "order": 1
-    },
-    {
-      "slug": "challenge",
-      "label": "challenge",
-      "group": "reasoning",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#6d28d9",
-      "order": 2
-    },
-    {
-      "slug": "perspective",
-      "label": "perspective",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 3
-    },
-    {
-      "slug": "robustness",
-      "label": "robustness",
-      "group": "generalization",
-      "count": 2,
-      "scale": 1.25,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 4
-    },
-    {
-      "slug": "demonstration",
-      "label": "demonstration",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 5
-    },
-    {
-      "slug": "nondeterministic",
-      "label": "nondeterministic",
-      "group": "reasoning",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#6d28d9",
-      "order": 6
-    },
-    {
-      "slug": "robotic",
-      "label": "robotic",
-      "group": "robotics",
-      "count": 4,
-      "scale": 2,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 7
-    },
-    {
-      "slug": "domain",
-      "label": "domain",
-      "group": "generalization",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 8
-    },
-    {
-      "slug": "solver",
-      "label": "solver",
-      "group": "reasoning",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#6d28d9",
-      "order": 9
-    },
-    {
-      "slug": "benchmark",
-      "label": "benchmark",
-      "group": "reasoning",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#6d28d9",
-      "order": 10
-    },
-    {
-      "slug": "game-theory",
-      "label": "game theory",
-      "group": "rl",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#7c3aed",
-      "order": 11
-    },
-    {
-      "slug": "attention",
-      "label": "attention",
-      "group": "data-efficiency",
-      "count": 2,
-      "scale": 1.25,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 12
-    },
-    {
-      "slug": "visual",
-      "label": "visual",
-      "group": "vision",
-      "count": 6,
-      "scale": 2.75,
-      "highlight": true,
-      "color": "#2563eb",
-      "order": 13
-    },
-    {
-      "slug": "attributes",
-      "label": "attributes",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 14
-    },
-    {
-      "slug": "scene",
-      "label": "scene",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 15
-    },
-    {
-      "slug": "encoders",
-      "label": "encoders",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 16
-    },
-    {
-      "slug": "adversarial-training",
-      "label": "adversarial training",
-      "group": "rl",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#7c3aed",
-      "order": 17
-    },
-    {
-      "slug": "pretraining",
-      "label": "pretraining",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 18
-    },
-    {
-      "slug": "llms",
-      "label": "LLMs",
-      "group": "reasoning",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#6d28d9",
-      "order": 19
-    },
-    {
-      "slug": "augmentation",
-      "label": "augmentation",
-      "group": "generalization",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 20
-    },
-    {
-      "slug": "rearrangement",
-      "label": "rearrangement",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 21
-    },
     {
       "slug": "generalization",
       "label": "Generalization",
       "group": "generalization",
-      "count": 3,
-      "scale": 1.63,
+      "count": 2,
+      "scale": 1.5,
       "highlight": true,
       "color": "#a13d1c",
-      "order": 22
-    },
-    {
-      "slug": "workspace",
-      "label": "workspace",
-      "group": "generalization",
-      "count": 2,
-      "scale": 1.25,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 23
+      "order": 1
     },
     {
       "slug": "data-efficiency",
       "label": "Data Efficiency",
       "group": "data-efficiency",
-      "count": 2,
-      "scale": 1.25,
+      "count": 3,
+      "scale": 2.13,
       "highlight": true,
       "color": "#1d4ed8",
-      "order": 24
+      "order": 2
     },
     {
-      "slug": "pushing",
-      "label": "pushing",
+      "slug": "visuomotor-policies",
+      "label": "Visuomotor Policies",
       "group": "visuomotor",
       "count": 1,
       "scale": 0.88,
-      "highlight": false,
+      "highlight": true,
       "color": "#0f766e",
-      "order": 25
-    },
-    {
-      "slug": "cross-attention",
-      "label": "cross-attention",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 26
-    },
-    {
-      "slug": "video",
-      "label": "video",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 27
-    },
-    {
-      "slug": "policy",
-      "label": "policy",
-      "group": "visuomotor",
-      "count": 4,
-      "scale": 2,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 28
-    },
-    {
-      "slug": "learning",
-      "label": "learning",
-      "group": "robotics",
-      "count": 3,
-      "scale": 1.63,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 29
-    },
-    {
-      "slug": "saliency",
-      "label": "saliency",
-      "group": "generalization",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 30
-    },
-    {
-      "slug": "diffusion",
-      "label": "diffusion",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 31
-    },
-    {
-      "slug": "prediction",
-      "label": "prediction",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 32
+      "order": 3
     },
     {
       "slug": "reasoning",
@@ -327,513 +37,373 @@ window.RESEARCH_KEYWORD_DATA = {
       "group": "reasoning",
       "count": 1,
       "scale": 0.88,
-      "highlight": false,
+      "highlight": true,
       "color": "#6d28d9",
-      "order": 33
+      "order": 4
     },
     {
-      "slug": "gan",
-      "label": "GAN",
-      "group": "rl",
+      "slug": "simulation",
+      "label": "simulation",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#7c3aed",
-      "order": 34
+      "color": "#334155",
+      "order": 5
     },
     {
-      "slug": "matching",
-      "label": "matching",
-      "group": "data-efficiency",
+      "slug": "systems",
+      "label": "systems",
+      "group": "systems",
+      "count": 4,
+      "scale": 2.75,
+      "highlight": false,
+      "color": "#475569",
+      "order": 6
+    },
+    {
+      "slug": "interactive-agents",
+      "label": "interactive agents",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#1d4ed8",
-      "order": 35
+      "color": "#334155",
+      "order": 7
     },
     {
-      "slug": "background",
-      "label": "background",
-      "group": "visuomotor",
+      "slug": "policy-learning",
+      "label": "policy learning",
+      "group": "other",
+      "count": 2,
+      "scale": 1.5,
+      "highlight": false,
+      "color": "#334155",
+      "order": 8
+    },
+    {
+      "slug": "uncertainty",
+      "label": "uncertainty",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#0f766e",
-      "order": 36
+      "color": "#334155",
+      "order": 9
     },
     {
-      "slug": "polynomial",
-      "label": "polynomial",
+      "slug": "vision",
+      "label": "vision",
+      "group": "vision",
+      "count": 3,
+      "scale": 2.13,
+      "highlight": false,
+      "color": "#2563eb",
+      "order": 10
+    },
+    {
+      "slug": "benchmark",
+      "label": "benchmark",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 11
+    },
+    {
+      "slug": "language-models",
+      "label": "language models",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 12
+    },
+    {
+      "slug": "perception",
+      "label": "perception",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 13
+    },
+    {
+      "slug": "deployment",
+      "label": "deployment",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 14
+    },
+    {
+      "slug": "language",
+      "label": "language",
       "group": "reasoning",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
       "color": "#6d28d9",
-      "order": 37
+      "order": 15
     },
     {
-      "slug": "behaviour",
-      "label": "behaviour",
-      "group": "generalization",
+      "slug": "world-models",
+      "label": "world models",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#a13d1c",
-      "order": 38
+      "color": "#334155",
+      "order": 16
     },
     {
-      "slug": "performance",
-      "label": "performance",
-      "group": "reasoning",
+      "slug": "visuomotor",
+      "label": "visuomotor",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 17
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "human robot interaction",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 18
+    },
+    {
+      "slug": "planning",
+      "label": "planning",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 19
+    },
+    {
+      "slug": "visual-representation",
+      "label": "visual representation",
+      "group": "other",
       "count": 2,
-      "scale": 1.25,
+      "scale": 1.5,
       "highlight": false,
-      "color": "#6d28d9",
-      "order": 39
+      "color": "#334155",
+      "order": 20
     },
     {
-      "slug": "control",
-      "label": "control",
-      "group": "visuomotor",
+      "slug": "calibration",
+      "label": "calibration",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#0f766e",
-      "order": 40
-    },
-    {
-      "slug": "mirroring",
-      "label": "mirroring",
-      "group": "data-efficiency",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 41
-    },
-    {
-      "slug": "transformers",
-      "label": "transformers",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 42
-    },
-    {
-      "slug": "cloning",
-      "label": "cloning",
-      "group": "generalization",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#a13d1c",
-      "order": 43
-    },
-    {
-      "slug": "features",
-      "label": "features",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 44
-    },
-    {
-      "slug": "editing",
-      "label": "editing",
-      "group": "vision",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 45
-    },
-    {
-      "slug": "zero-shot",
-      "label": "zero-shot",
-      "group": "data-efficiency",
-      "count": 2,
-      "scale": 1.25,
-      "highlight": false,
-      "color": "#1d4ed8",
-      "order": 46
+      "color": "#334155",
+      "order": 21
     },
     {
       "slug": "evaluation",
       "label": "evaluation",
-      "group": "reasoning",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#6d28d9",
-      "order": 47
-    },
-    {
-      "slug": "planar",
-      "label": "planar",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 48
-    },
-    {
-      "slug": "decision",
-      "label": "decision",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 49
+      "color": "#334155",
+      "order": 22
     },
     {
       "slug": "manipulation",
       "label": "manipulation",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 23
+    },
+    {
+      "slug": "teaching",
+      "label": "teaching",
+      "group": "other",
+      "count": 1,
+      "scale": 0.88,
+      "highlight": false,
+      "color": "#334155",
+      "order": 24
+    },
+    {
+      "slug": "robotics",
+      "label": "robotics",
       "group": "robotics",
       "count": 4,
-      "scale": 2,
+      "scale": 2.75,
       "highlight": false,
       "color": "#0f766e",
-      "order": 50
+      "order": 25
     },
     {
-      "slug": "temporal-consistency",
-      "label": "temporal consistency",
-      "group": "vision",
+      "slug": "interfaces",
+      "label": "interfaces",
+      "group": "other",
       "count": 1,
       "scale": 0.88,
       "highlight": false,
-      "color": "#2563eb",
-      "order": 51
-    },
-    {
-      "slug": "representation",
-      "label": "representation",
-      "group": "vision",
-      "count": 2,
-      "scale": 1.25,
-      "highlight": false,
-      "color": "#2563eb",
-      "order": 52
-    },
-    {
-      "slug": "physics",
-      "label": "physics",
-      "group": "visuomotor",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#0f766e",
-      "order": 53
-    },
-    {
-      "slug": "architecture-search",
-      "label": "architecture search",
-      "group": "rl",
-      "count": 1,
-      "scale": 0.88,
-      "highlight": false,
-      "color": "#7c3aed",
-      "order": 54
+      "color": "#334155",
+      "order": 26
     }
   ],
   "papers": {
-    "nppc": [
+    "adaptive-robot-policies": [
+      "robotics",
+      "visuomotor-policies",
+      "generalization",
+      "data-efficiency",
+      "manipulation",
+      "policy-learning",
+      "vision",
+      "visuomotor"
+    ],
+    "visual-world-models": [
+      "world-models",
+      "visual-representation",
+      "data-efficiency",
+      "planning",
+      "robotics",
+      "simulation",
+      "vision",
+      "systems"
+    ],
+    "reasoning-benchmark": [
       "reasoning",
-      "llms",
+      "language-models",
       "benchmark",
-      "challenge",
+      "interactive-agents",
       "evaluation",
-      "performance",
-      "polynomial",
-      "nondeterministic",
-      "solver"
-    ],
-    "palm": [
-      "robotic",
-      "learning",
-      "manipulation",
-      "visual",
-      "representation",
       "generalization",
-      "visuomotor-policies",
-      "policy",
-      "domain",
-      "workspace"
+      "language",
+      "systems"
     ],
-    "paca": [
-      "robotic",
-      "manipulation",
-      "visual",
-      "attention",
+    "calibrated-perception": [
+      "calibration",
+      "perception",
+      "deployment",
+      "uncertainty",
+      "robotics",
+      "visual-representation",
+      "vision",
+      "systems"
+    ],
+    "human-centered-interfaces": [
+      "human-robot-interaction",
+      "interfaces",
+      "robotics",
+      "teaching",
       "data-efficiency",
-      "zero-shot",
-      "scene",
-      "rearrangement",
-      "perspective",
-      "cross-attention",
-      "matching"
-    ],
-    "donas": [
-      "learning",
-      "game-theory",
-      "architecture-search",
-      "adversarial-training",
-      "gan",
-      "robustness",
-      "performance"
-    ],
-    "visual-encoder": [
-      "visual",
-      "representation",
-      "encoders",
-      "features",
-      "pretraining",
-      "visuomotor-policies",
-      "policy",
-      "decision",
-      "learning"
-    ],
-    "mirrorduo": [
-      "robotic",
-      "manipulation",
-      "data-efficiency",
-      "visuomotor-policies",
-      "mirroring",
-      "demonstration",
-      "workspace",
-      "generalization",
-      "policy"
-    ],
-    "realcraft": [
-      "visual",
-      "attention",
-      "video",
-      "editing",
-      "zero-shot",
-      "diffusion",
-      "temporal-consistency"
-    ],
-    "saga": [
-      "visual",
-      "generalization",
-      "robustness",
-      "behaviour",
-      "cloning",
-      "saliency",
-      "augmentation",
-      "visuomotor-policies",
-      "policy"
-    ],
-    "push1k": [
-      "robotic",
-      "manipulation",
-      "visual",
-      "pushing",
-      "planar",
-      "physics",
-      "background",
-      "attributes",
-      "transformers",
-      "prediction",
-      "control"
+      "policy-learning",
+      "systems"
     ]
   },
   "keywordToPapers": {
-    "reasoning": [
-      "nppc"
-    ],
-    "llms": [
-      "nppc"
-    ],
-    "benchmark": [
-      "nppc"
-    ],
-    "challenge": [
-      "nppc"
-    ],
-    "evaluation": [
-      "nppc"
-    ],
-    "performance": [
-      "nppc",
-      "donas"
-    ],
-    "polynomial": [
-      "nppc"
-    ],
-    "nondeterministic": [
-      "nppc"
-    ],
-    "solver": [
-      "nppc"
-    ],
-    "robotic": [
-      "palm",
-      "paca",
-      "mirrorduo",
-      "push1k"
-    ],
-    "learning": [
-      "palm",
-      "donas",
-      "visual-encoder"
-    ],
-    "manipulation": [
-      "palm",
-      "paca",
-      "mirrorduo",
-      "push1k"
-    ],
-    "visual": [
-      "palm",
-      "paca",
-      "visual-encoder",
-      "realcraft",
-      "saga",
-      "push1k"
-    ],
-    "representation": [
-      "palm",
-      "visual-encoder"
-    ],
-    "generalization": [
-      "palm",
-      "mirrorduo",
-      "saga"
+    "robotics": [
+      "adaptive-robot-policies",
+      "visual-world-models",
+      "calibrated-perception",
+      "human-centered-interfaces"
     ],
     "visuomotor-policies": [
-      "palm",
-      "visual-encoder",
-      "mirrorduo",
-      "saga"
+      "adaptive-robot-policies"
     ],
-    "policy": [
-      "palm",
-      "visual-encoder",
-      "mirrorduo",
-      "saga"
-    ],
-    "domain": [
-      "palm"
-    ],
-    "workspace": [
-      "palm",
-      "mirrorduo"
-    ],
-    "attention": [
-      "paca",
-      "realcraft"
+    "generalization": [
+      "adaptive-robot-policies",
+      "reasoning-benchmark"
     ],
     "data-efficiency": [
-      "paca",
-      "mirrorduo"
+      "adaptive-robot-policies",
+      "visual-world-models",
+      "human-centered-interfaces"
     ],
-    "zero-shot": [
-      "paca",
-      "realcraft"
+    "manipulation": [
+      "adaptive-robot-policies"
     ],
-    "scene": [
-      "paca"
+    "policy-learning": [
+      "adaptive-robot-policies",
+      "human-centered-interfaces"
     ],
-    "rearrangement": [
-      "paca"
+    "vision": [
+      "adaptive-robot-policies",
+      "visual-world-models",
+      "calibrated-perception"
     ],
-    "perspective": [
-      "paca"
+    "visuomotor": [
+      "adaptive-robot-policies"
     ],
-    "cross-attention": [
-      "paca"
+    "world-models": [
+      "visual-world-models"
     ],
-    "matching": [
-      "paca"
+    "visual-representation": [
+      "visual-world-models",
+      "calibrated-perception"
     ],
-    "game-theory": [
-      "donas"
+    "planning": [
+      "visual-world-models"
     ],
-    "architecture-search": [
-      "donas"
+    "simulation": [
+      "visual-world-models"
     ],
-    "adversarial-training": [
-      "donas"
+    "systems": [
+      "visual-world-models",
+      "reasoning-benchmark",
+      "calibrated-perception",
+      "human-centered-interfaces"
     ],
-    "gan": [
-      "donas"
+    "reasoning": [
+      "reasoning-benchmark"
     ],
-    "robustness": [
-      "donas",
-      "saga"
+    "language-models": [
+      "reasoning-benchmark"
     ],
-    "encoders": [
-      "visual-encoder"
+    "benchmark": [
+      "reasoning-benchmark"
     ],
-    "features": [
-      "visual-encoder"
+    "interactive-agents": [
+      "reasoning-benchmark"
     ],
-    "pretraining": [
-      "visual-encoder"
+    "evaluation": [
+      "reasoning-benchmark"
     ],
-    "decision": [
-      "visual-encoder"
+    "language": [
+      "reasoning-benchmark"
     ],
-    "mirroring": [
-      "mirrorduo"
+    "calibration": [
+      "calibrated-perception"
     ],
-    "demonstration": [
-      "mirrorduo"
+    "perception": [
+      "calibrated-perception"
     ],
-    "video": [
-      "realcraft"
+    "deployment": [
+      "calibrated-perception"
     ],
-    "editing": [
-      "realcraft"
+    "uncertainty": [
+      "calibrated-perception"
     ],
-    "diffusion": [
-      "realcraft"
+    "human-robot-interaction": [
+      "human-centered-interfaces"
     ],
-    "temporal-consistency": [
-      "realcraft"
+    "interfaces": [
+      "human-centered-interfaces"
     ],
-    "behaviour": [
-      "saga"
-    ],
-    "cloning": [
-      "saga"
-    ],
-    "saliency": [
-      "saga"
-    ],
-    "augmentation": [
-      "saga"
-    ],
-    "pushing": [
-      "push1k"
-    ],
-    "planar": [
-      "push1k"
-    ],
-    "physics": [
-      "push1k"
-    ],
-    "background": [
-      "push1k"
-    ],
-    "attributes": [
-      "push1k"
-    ],
-    "transformers": [
-      "push1k"
-    ],
-    "prediction": [
-      "push1k"
-    ],
-    "control": [
-      "push1k"
+    "teaching": [
+      "human-centered-interfaces"
     ]
   }
 };

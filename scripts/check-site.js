@@ -7,9 +7,16 @@ const sourceFiles = [
   ...htmlPages,
   "css/portfolio.css",
   "js/site.js",
+  "js/template-editor.js",
   "js/research-keywords.js",
+  "data/publications.json",
+  "data/research-keywords.json",
+  "data/site-content.json",
   "scripts/build-life-gallery.js",
-  "scripts/build-research-keywords.js"
+  "scripts/build-publications.js",
+  "scripts/build-research-keywords.js",
+  "scripts/dev-server.js",
+  "scripts/import-google-scholar.js"
 ];
 const referenceSourceFiles = [
   ...htmlPages,
@@ -21,14 +28,20 @@ const requiredFiles = [
   "favicon.svg",
   "css/portfolio.css",
   "js/site.js",
+  "js/template-editor.js",
   "js/research-keywords.js",
+  "data/publications.json",
   "data/research-keywords.json",
+  "data/site-content.json",
   "scripts/build-life-gallery.js",
+  "scripts/build-publications.js",
   "scripts/build-research-keywords.js",
-  "pdfs/CV_Ruiyu_Wang.pdf"
+  "scripts/check-site.js",
+  "scripts/dev-server.js",
+  "scripts/import-google-scholar.js"
 ];
 const externalRefPattern = /^(?:https?:|mailto:|tel:|data:|javascript:|\/\/)/i;
-const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp"]);
+const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]);
 
 const toRootPath = (filePath) => path.join(root, filePath);
 const exists = (filePath) => fs.existsSync(toRootPath(filePath));
@@ -84,6 +97,13 @@ referenceSourceFiles.forEach((file) => {
         refs.set(ref, file);
       }
     }
+  }
+});
+
+const publications = JSON.parse(fs.readFileSync(toRootPath("data/publications.json"), "utf8"));
+publications.forEach((paper) => {
+  if (paper.image) {
+    refs.set(cleanRef(paper.image), "data/publications.json");
   }
 });
 

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title">
+  <title id="title">Gallery placeholder one</title>
+  <rect width="900" height="1200" fill="#f8fafc"/>
+  <rect x="90" y="120" width="720" height="820" rx="28" fill="#dbeafe"/>
+  <circle cx="450" cy="410" r="150" fill="#1d4ed8"/>
+  <path d="M160 860c110-210 230-280 360-210 100 54 170 34 220-60v350H160v-80Z" fill="#0f766e"/>
+  <text x="90" y="1080" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="42">Photo 01</text>
+</svg>

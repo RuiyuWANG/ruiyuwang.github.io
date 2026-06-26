@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Demo profile portrait</title>
+  <desc id="desc">Abstract placeholder portrait for the academic website template.</desc>
+  <rect width="900" height="900" fill="#eef4f8"/>
+  <circle cx="450" cy="320" r="150" fill="#d7e7ee"/>
+  <path d="M180 820c36-198 166-300 270-300s234 102 270 300H180Z" fill="#0f766e"/>
+  <path d="M260 760c48-108 118-162 190-162s142 54 190 162" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" opacity=".38"/>
+  <circle cx="390" cy="310" r="20" fill="#0f172a"/>
+  <circle cx="510" cy="310" r="20" fill="#0f172a"/>
+  <path d="M385 390c38 28 92 28 130 0" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+</svg>

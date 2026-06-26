@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Visual world model teaser placeholder</title>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="110" y="130" width="980" height="415" rx="18" fill="#eef4f8" stroke="#cbd5e1" stroke-width="4"/>
+  <g fill="#1d4ed8" opacity=".9">
+    <circle cx="270" cy="300" r="62"/>
+    <circle cx="460" cy="250" r="40"/>
+    <circle cx="640" cy="340" r="88"/>
+    <circle cx="880" cy="285" r="56"/>
+  </g>
+  <g fill="none" stroke="#0f766e" stroke-width="9" stroke-linecap="round">
+    <path d="M270 300C360 210 520 438 640 340S790 200 880 285"/>
+    <path d="M220 455h760"/>
+  </g>
+  <text x="140" y="105" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">Visual world models</text>
+  <text x="142" y="600" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="28">Planning from compact visual representations</text>
+</svg>

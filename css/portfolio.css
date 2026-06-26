@@ -612,8 +612,12 @@ body.portfolio-site.is-lightbox-open {
   content: "";
   position: absolute;
   inset: 5%;
-  background: url("../images/research_wordcloud.png") center / contain no-repeat;
-  opacity: 0.06;
+  background:
+    linear-gradient(135deg, transparent 0 18%, rgba(15, 118, 110, 0.08) 18% 24%, transparent 24% 100%),
+    radial-gradient(ellipse at 34% 48%, rgba(29, 78, 216, 0.1), transparent 34%),
+    radial-gradient(ellipse at 70% 54%, rgba(161, 61, 28, 0.08), transparent 28%);
+  border-radius: 999px;
+  opacity: 0.85;
   pointer-events: none;
 }
 
@@ -658,8 +662,13 @@ body.portfolio-site.is-lightbox-open {
 }
 
 .theme-word[data-group="reasoning"],
+.theme-word[data-group="language"],
 .theme-word[data-group="rl"] {
   color: #6d28d9;
+}
+
+.theme-word[data-group="systems"] {
+  color: #475569;
 }
 
 .theme-word:hover,
@@ -1490,6 +1499,69 @@ body.portfolio-site.is-lightbox-open {
   color: #fff;
   background: var(--green);
   border-color: var(--green);
+}
+
+.template-editor-bar {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100% - 32px);
+  padding: 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.18);
+  transform: translateX(-50%);
+  backdrop-filter: blur(18px);
+}
+
+.template-editor-bar span {
+  font-size: 13px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.template-editor-bar small {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.template-editor-bar button,
+.template-editor-bar a {
+  min-height: 32px;
+  padding: 6px 10px;
+  color: var(--ink);
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.template-editor-bar button:hover,
+.template-editor-bar button:focus,
+.template-editor-bar a:hover,
+.template-editor-bar a:focus {
+  color: #fff;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.template-edit-mode [data-editable] {
+  outline: 1px dashed rgba(29, 78, 216, 0.46);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.template-edit-mode [data-editable]:focus {
+  outline: 2px solid rgba(29, 78, 216, 0.72);
+  background: rgba(29, 78, 216, 0.06);
 }
 
 .portfolio-site main.publication-page-main {

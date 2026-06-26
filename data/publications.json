@@ -1,0 +1,114 @@
+[
+  {
+    "id": "adaptive-robot-policies",
+    "title": "Adaptive Robot Policies from Sparse Demonstrations",
+    "authors": "Alex Researcher, Taylor Demo, and Morgan Lee",
+    "year": 2026,
+    "venue": "International Conference on Robotics and Automation",
+    "venueShort": "ICRA 2026",
+    "type": "Conference",
+    "featured": true,
+    "image": "images/demo/paper-robot.svg",
+    "tags": ["robotics", "vision", "visuomotor", "generalization"],
+    "keywords": ["robotics", "visuomotor-policies", "generalization", "data-efficiency", "manipulation", "policy-learning"],
+    "abstract": "This demo paper studies how a robot policy can adapt from a small number of demonstrations while preserving task-relevant visual attention. Replace this abstract with the real paper abstract or leave it blank until the final version is public.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://example.com/adaptive-robot-policies.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/example/adaptive-robot-policies"
+      }
+    ]
+  },
+  {
+    "id": "visual-world-models",
+    "title": "Visual World Models for Data-Efficient Planning",
+    "authors": "Jamie Chen, Alex Researcher, and Priya Kumar",
+    "year": 2026,
+    "venue": "Conference on Robot Learning",
+    "venueShort": "CoRL 2026",
+    "type": "Conference",
+    "featured": true,
+    "image": "images/demo/paper-vision.svg",
+    "tags": ["robotics", "vision", "systems", "data-efficiency"],
+    "keywords": ["world-models", "visual-representation", "data-efficiency", "planning", "robotics", "simulation"],
+    "abstract": "This demo entry summarizes a reusable project card with a teaser image, topic tags, links, and an expandable abstract. The publication builder uses this JSON object to render both the homepage and full publication page.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://example.com/visual-world-models.pdf"
+      },
+      {
+        "label": "Website",
+        "url": "https://example.com/visual-world-models"
+      }
+    ]
+  },
+  {
+    "id": "reasoning-benchmark",
+    "title": "A Reasoning Benchmark for Interactive Agents",
+    "authors": "Morgan Lee, Sam Rivera, and Alex Researcher",
+    "year": 2025,
+    "venue": "Transactions on Machine Learning Research",
+    "venueShort": "TMLR 2025",
+    "type": "Journal",
+    "featured": true,
+    "image": "images/demo/paper-language.svg",
+    "tags": ["language", "systems", "evaluation"],
+    "keywords": ["reasoning", "language-models", "benchmark", "interactive-agents", "evaluation", "generalization"],
+    "abstract": "This placeholder paper demonstrates how language-model or evaluation work can live alongside robotics publications in the same template. Topic filters and keyword-cloud lookup are driven by the tags and keywords arrays.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://example.com/reasoning-benchmark.pdf"
+      }
+    ]
+  },
+  {
+    "id": "calibrated-perception",
+    "title": "Calibrated Perception for Reliable Field Deployment",
+    "authors": "Alex Researcher and Dana Smith",
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "venueShort": "RA-L 2025",
+    "type": "Journal",
+    "featured": false,
+    "image": "images/demo/paper-systems.svg",
+    "tags": ["robotics", "vision", "systems"],
+    "keywords": ["calibration", "perception", "deployment", "uncertainty", "robotics", "visual-representation"],
+    "abstract": "Use non-featured entries for papers that should appear in the full publication page but not in the default homepage selection. They still contribute to the keyword cloud and can be found by clicking related words.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://example.com/calibrated-perception.pdf"
+      }
+    ]
+  },
+  {
+    "id": "human-centered-interfaces",
+    "title": "Human-Centered Interfaces for Robot Learning Systems",
+    "authors": "Priya Kumar, Jamie Chen, and Alex Researcher",
+    "year": 2024,
+    "venue": "ACM/IEEE International Conference on Human-Robot Interaction",
+    "venueShort": "HRI 2024",
+    "type": "Conference",
+    "featured": false,
+    "image": "images/demo/paper-interface.svg",
+    "tags": ["robotics", "systems"],
+    "keywords": ["human-robot-interaction", "interfaces", "robotics", "teaching", "data-efficiency", "policy-learning"],
+    "abstract": "This entry gives the publication page enough variety to show year grouping, search, topic filters, media thumbnails, and abstract toggles. Replace it with a real paper or remove it from the JSON array.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://example.com/human-centered-interfaces.pdf"
+      },
+      {
+        "label": "Demo",
+        "url": "https://example.com/hri-demo"
+      }
+    ]
+  }
+]

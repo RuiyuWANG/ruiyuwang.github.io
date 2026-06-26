@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RW">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#0f172a"/>
-  <text x="32" y="39" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">RW</text>
+  <path d="M18 44 31 14h4l13 30h-7l-3-7H28l-3 7h-7Zm12-13h6l-3-8-3 8Z" fill="#fff"/>
 </svg>

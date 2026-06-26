@@ -5,7 +5,7 @@ const { execFileSync } = require("child_process");
 const root = path.resolve(__dirname, "..");
 const lifePath = path.join(root, "life.html");
 const photoDir = path.join(root, "images", "oc");
-const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp"]);
+const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]);
 const wideRatio = 2.4;
 const excludedPhotoPattern = /^profile[_-]/i;
 
@@ -14,7 +14,25 @@ const toSitePath = (absolutePath) => {
   return relativePath.map((part) => encodeURIComponent(part)).join("/");
 };
 
+const getSvgDimensions = (absolutePath) => {
+  const text = fs.readFileSync(absolutePath, "utf8");
+  const svgMatch = text.match(/<svg[^>]*>/i);
+  const svgTag = svgMatch ? svgMatch[0] : "";
+  const widthMatch = svgTag.match(/\bwidth="([0-9.]+)"/i);
+  const heightMatch = svgTag.match(/\bheight="([0-9.]+)"/i);
+  const viewBoxMatch = svgTag.match(/\bviewBox="[^"]*?([0-9.]+)\s+([0-9.]+)"/i);
+
+  const width = widthMatch ? Number(widthMatch[1]) : viewBoxMatch ? Number(viewBoxMatch[1]) : 1200;
+  const height = heightMatch ? Number(heightMatch[1]) : viewBoxMatch ? Number(viewBoxMatch[2]) : 900;
+
+  return { width, height };
+};
+
 const getDimensions = (absolutePath) => {
+  if (path.extname(absolutePath).toLowerCase() === ".svg") {
+    return getSvgDimensions(absolutePath);
+  }
+
   const output = execFileSync("identify", ["-quiet", "-format", "%w %h", absolutePath], {
     encoding: "utf8",
     stdio: ["ignore", "pipe", "ignore"]
@@ -34,8 +52,8 @@ const renderPhoto = (photo, options = {}) => {
   const indent = options.indent || "\t\t\t";
 
   return [
-    `${indent}<a class="${classes}" href="${photo.src}" data-lightbox-src="${photo.src}" data-lightbox-alt="Daily life photo">`,
-    `${indent}\t<img src="${photo.src}" alt="Daily life photo" width="${photo.width}" height="${photo.height}"${loading}>`,
+    `${indent}<a class="${classes}" href="${photo.src}" data-lightbox-src="${photo.src}" data-lightbox-alt="Gallery photo">`,
+    `${indent}\t<img src="${photo.src}" alt="Gallery photo" width="${photo.width}" height="${photo.height}"${loading}>`,
     `${indent}</a>`
   ].join("\n");
 };

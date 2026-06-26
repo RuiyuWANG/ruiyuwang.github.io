@@ -4,24 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Curriculum vitae for Ruiyu Wang.">
+	<meta name="description" content="Demo CV page for the Academic Portfolio Template.">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>CV | Ruiyu Wang</title>
+	<title>CV | Academic Portfolio Template</title>
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-	<link rel="stylesheet" href="css/portfolio.css?v=20260625-header-text-large">
+	<link rel="stylesheet" href="css/portfolio.css?v=template-20260626">
+	<script src="js/template-editor.js?v=template-20260626" defer></script>
 </head>
 
 <body class="portfolio-site">
 	<header class="site-header" aria-label="Primary navigation">
-		<a class="brand" href="index.html" aria-label="Ruiyu Wang home">
-			<span class="brand-mark">RW</span>
-			<span>Ruiyu Wang</span>
+		<a class="brand" href="index.html" aria-label="Template homepage">
+			<span class="brand-mark" data-editable="brand.initials">AT</span>
+			<span data-editable="brand.name">Academic Template</span>
 		</a>
 		<nav class="site-nav">
 			<a href="publications.html">Publications</a>
-			<a href="cv.html">CV</a>
+			<a href="cv.html" aria-current="page">CV</a>
 			<a href="life.html">Life</a>
 			<a href="index.html#contact">Contact</a>
 		</nav>
@@ -29,21 +30,20 @@
 
 	<main class="cv-page-main">
 		<section class="page-hero cv-page-hero" aria-labelledby="cv-title">
-			<p class="eyebrow">course of life</p>
-			<h1 id="cv-title">Curriculum Vitae</h1>
-			<p>Academic CV with selected professional details.</p>
+			<p class="eyebrow">Curriculum Vitae</p>
+			<h1 id="cv-title" data-editable="cv.title">CV</h1>
+			<p data-editable="cv.intro">A scrollable CV page rendered from SVG pages. Replace the demo SVGs in <code>images/cv-pages</code> with your exported CV pages.</p>
 			<div class="cv-actions">
 				<a class="section-link" href="index.html">Back to homepage</a>
-				<a class="section-link" href="pdfs/CV_Ruiyu_Wang.pdf" download>Download PDF</a>
 			</div>
 		</section>
 
 		<section class="cv-viewer-section" aria-label="Curriculum vitae document">
 			<div class="cv-page-stack">
-				<img class="cv-page-image" src="images/cv-pages/cv-1.svg" alt="Curriculum vitae page 1" width="612" height="792">
-				<img class="cv-page-image" src="images/cv-pages/cv-2.svg" alt="Curriculum vitae page 2" width="612" height="792" loading="lazy">
+				<img class="cv-page-image" src="images/cv-pages/cv-1.svg" alt="Demo CV page 1" width="612" height="792">
+				<img class="cv-page-image" src="images/cv-pages/cv-2.svg" alt="Demo CV page 2" width="612" height="792" loading="lazy">
 			</div>
-			<p class="cv-fallback">Prefer the original file? <a href="pdfs/CV_Ruiyu_Wang.pdf" download>Download the PDF</a>.</p>
+			<p class="cv-fallback">To add a PDF download, place a public PDF in <code>pdfs/</code> and add a link in this section.</p>
 		</section>
 	</main>
 </body>

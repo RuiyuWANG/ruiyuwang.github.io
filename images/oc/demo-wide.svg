@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title">
+  <title id="title">Wide gallery placeholder</title>
+  <rect width="1400" height="520" fill="#dbeafe"/>
+  <path d="M0 370c180-100 330-96 450-40s270 68 440-20 332-76 510 28v182H0V370Z" fill="#0f766e" opacity=".84"/>
+  <path d="M0 430c210-64 348-52 510 2s320 68 510-8 284-62 380-8v104H0v-90Z" fill="#0f172a" opacity=".88"/>
+  <circle cx="1110" cy="130" r="58" fill="#facc15"/>
+  <text x="80" y="110" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">Wide photo placeholder</text>
+</svg>

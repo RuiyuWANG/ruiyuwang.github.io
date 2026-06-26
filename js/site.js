@@ -64,6 +64,10 @@
     "data-efficiency": "Data efficiency",
     visuomotor: "Visuomotor policies",
     llms: "LLMs",
+    language: "Language",
+    systems: "Systems",
+    evaluation: "Evaluation",
+    imported: "Imported from Google Scholar",
     workshop: "Workshops"
   };
 
@@ -477,7 +481,7 @@
     const snippets = {
       code: "\n```python\n# Add code here\nresult = model(input)\n```\n",
       formula: "\n$$\nL(\\theta) = \\sum_t ||a_t - \\pi_\\theta(o_t)||_2^2\n$$\n",
-      image: "\n![Image caption](images/paper_teaser/palm.png)\n",
+      image: "\n![Image caption](images/demo/paper-robot.svg)\n",
       video: "\n@[Video caption](https://www.youtube.com/embed/VIDEO_ID)\n"
     };
 

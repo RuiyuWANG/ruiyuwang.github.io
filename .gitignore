@@ -16,6 +16,10 @@ private/
 drafts/
 notes/
 local/
+scholar-profile*.html
+google-scholar*.html
+*.ris
+*.bib
 
 # Dependencies, caches, logs, and local build output
 node_modules/
