@@ -168,6 +168,7 @@ body.portfolio-site.is-lightbox-open {
   align-items: start;
   width: min(1380px, calc(100% - 96px));
   margin: 0 auto;
+  scroll-margin-top: 92px;
 }
 
 .portfolio-site main.content-column {
@@ -2508,6 +2509,10 @@ body.portfolio-site.is-lightbox-open {
     max-width: 100%;
   }
 
+  .site-shell {
+    gap: 0;
+  }
+
   .brand {
     font-size: 15px;
   }
@@ -2544,6 +2549,10 @@ body.portfolio-site.is-lightbox-open {
   .hero-lede,
   .about-copy p {
     font-size: 17px;
+  }
+
+  .hero-section {
+    padding-top: 34px;
   }
 
   .about-section,
@@ -2732,33 +2741,48 @@ body.portfolio-site.is-lightbox-open {
 
   .profile-sidebar {
     display: grid;
-    grid-template-columns: 78px minmax(0, 1fr);
-    gap: 10px 12px;
-    padding: 12px;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    gap: 16px;
+    padding: clamp(22px, 7vw, 30px);
+    text-align: center;
   }
 
   .sidebar-photo-button {
-    grid-row: 1 / span 2;
+    grid-row: auto;
+    width: min(46vw, 176px);
+    max-width: 176px;
+  }
+
+  .sidebar-photo {
+    border-radius: 16px;
   }
 
   .sidebar-name {
-    font-size: 20px;
+    font-size: clamp(28px, 8.4vw, 36px);
   }
 
   .sidebar-identity {
-    gap: 2px;
+    justify-items: center;
+    gap: 4px;
   }
 
   .sidebar-identity p:not(.sidebar-name) {
-    font-size: 12px;
-    line-height: 1.28;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.38;
   }
 
   .sidebar-links {
-    grid-column: 2;
-    grid-template-columns: repeat(4, 30px);
-    gap: 6px;
+    grid-column: auto;
+    grid-template-columns: repeat(4, 40px);
+    justify-content: center;
+    gap: 10px;
     align-items: center;
+    margin-top: 4px;
     padding-top: 0;
     border-top: 0;
   }
@@ -2770,14 +2794,21 @@ body.portfolio-site.is-lightbox-open {
 
   .portfolio-site .sidebar-link {
     justify-content: center;
-    min-height: 30px;
-    padding: 3px;
+    min-height: 40px;
+    padding: 5px;
+    border-radius: 10px;
   }
 
   .sidebar-link-icon {
-    flex-basis: 24px;
-    width: 24px;
-    height: 24px;
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .sidebar-link-icon svg {
+    width: 17px;
+    height: 17px;
   }
 }
 
