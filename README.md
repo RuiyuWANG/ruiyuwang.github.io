@@ -2,6 +2,9 @@
 
 Static personal website for `ruiyuwang.github.io`.
 
+The root `.nojekyll` file is required because the Life gallery includes image
+filenames that start with `_`; GitHub Pages/Jekyll otherwise hides those files.
+
 ## Project structure
 
 - `index.html`: homepage, profile sidebar, selected publications, education, service, and contact.

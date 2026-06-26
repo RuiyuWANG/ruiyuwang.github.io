@@ -17,6 +17,7 @@ const referenceSourceFiles = [
 ];
 const requiredFiles = [
   ...htmlPages,
+  ".nojekyll",
   "favicon.svg",
   "css/portfolio.css",
   "js/site.js",
