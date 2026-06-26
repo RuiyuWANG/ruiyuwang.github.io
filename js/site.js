@@ -45,6 +45,75 @@
   const markdownPreview = document.querySelector("[data-markdown-preview]");
   const markdownInsertButtons = Array.from(document.querySelectorAll("[data-markdown-insert]"));
 
+  const setupMobileProfileIntro = () => {
+    const homeShell = document.querySelector("#top.site-shell");
+    const profileSidebar = homeShell ? homeShell.querySelector(".profile-sidebar") : null;
+
+    if (!profileSidebar) {
+      return;
+    }
+
+    const mobileQuery = window.matchMedia("(max-width: 560px)");
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let collapseTimer = null;
+    let settleTimer = null;
+
+    const clearCollapseTimer = () => {
+      if (collapseTimer) {
+        window.clearTimeout(collapseTimer);
+        collapseTimer = null;
+      }
+      if (settleTimer) {
+        window.clearTimeout(settleTimer);
+        settleTimer = null;
+      }
+    };
+
+    const collapseProfile = (options = {}) => {
+      clearCollapseTimer();
+      document.body.classList.add("is-mobile-profile-collapsed");
+      if (options.instant) {
+        document.body.classList.add("is-mobile-profile-collapse-complete");
+        return;
+      }
+      settleTimer = window.setTimeout(() => {
+        document.body.classList.add("is-mobile-profile-collapse-complete");
+      }, 650);
+    };
+
+    const scheduleProfileIntro = () => {
+      clearCollapseTimer();
+      document.body.classList.remove("is-mobile-profile-collapsed");
+      document.body.classList.remove("is-mobile-profile-collapse-complete");
+
+      if (!mobileQuery.matches) {
+        return;
+      }
+
+      const shouldSkipIntro = window.location.hash && window.location.hash !== "#top";
+      if (shouldSkipIntro || reducedMotionQuery.matches) {
+        collapseProfile({ instant: true });
+        return;
+      }
+
+      collapseTimer = window.setTimeout(collapseProfile, 3000);
+    };
+
+    const collapseOnUserScroll = () => {
+      if (mobileQuery.matches && window.scrollY > 4) {
+        collapseProfile();
+      }
+    };
+
+    scheduleProfileIntro();
+
+    mobileQuery.addEventListener("change", scheduleProfileIntro);
+    reducedMotionQuery.addEventListener("change", scheduleProfileIntro);
+    window.addEventListener("scroll", collapseOnUserScroll, { passive: true });
+  };
+
+  setupMobileProfileIntro();
+
   const defaultFilter = filterResults ? filterResults.dataset.defaultFilter || "all" : "all";
 
   let activeFilter = defaultFilter;

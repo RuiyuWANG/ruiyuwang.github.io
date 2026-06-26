@@ -78,13 +78,6 @@ npm run build:life
 
 The script skips files whose names start with `profile_` or `profile-`.
 
-## Logo and favicon
-
-The browser tab icon and the header logo both use `favicon.svg`. To update the
-site mark, replace that file and update the version query attached to
-`favicon.svg` in the HTML pages, for example `?v=20260626-rw-logo`. The version
-query helps GitHub Pages and browsers stop showing an old cached icon.
-
 ## Privacy notes
 
 Keep raw CVs, private PDFs, source documents,
