@@ -126,10 +126,15 @@ if (linkedLegacyAssets.length) {
   fail("Legacy template assets are still linked:", linkedLegacyAssets);
 }
 
-const visibleBlogLinks = htmlPages
-  .filter((file) => fs.readFileSync(toRootPath(file), "utf8").includes("href=\"blog.html\""));
-if (visibleBlogLinks.length) {
-  fail("Blog is hidden for now, but these pages still link to it:", visibleBlogLinks);
+const pagesWithoutBlogLinks = htmlPages
+  .filter((file) => !fs.readFileSync(toRootPath(file), "utf8").includes("href=\"blog.html\""));
+if (pagesWithoutBlogLinks.length) {
+  fail("Blog should be visible in the main navigation, but these pages do not link to it:", pagesWithoutBlogLinks);
+}
+
+const blogHtml = fs.readFileSync(toRootPath("blog.html"), "utf8");
+if (!blogHtml.includes("href=\"blog.html\" aria-current=\"page\"")) {
+  fail("Blog page is missing its active navigation state.");
 }
 
 const ocDir = toRootPath("images/oc");

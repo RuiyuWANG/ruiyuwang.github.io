@@ -17,10 +17,10 @@
 	<meta name="twitter:card" content="summary_large_image">
 
 	<link rel="preload" as="image" href="images/demo/profile.svg">
-	<link rel="stylesheet" href="css/portfolio.css?v=template-20260626-mobile-gallery">
-	<script src="js/research-keywords.js?v=template-20260626-mobile-gallery" defer></script>
-	<script src="js/site.js?v=template-20260626-mobile-gallery" defer></script>
-	<script src="js/template-editor.js?v=template-20260626-mobile-gallery" defer></script>
+	<link rel="stylesheet" href="css/portfolio.css?v=template-20260626-blog">
+	<script src="js/research-keywords.js?v=template-20260626-blog" defer></script>
+	<script src="js/site.js?v=template-20260626-blog" defer></script>
+	<script src="js/template-editor.js?v=template-20260626-blog" defer></script>
 </head>
 
 <body class="portfolio-site">
@@ -33,6 +33,7 @@
 			<a href="publications.html">Publications</a>
 			<a href="cv.html">CV</a>
 			<a href="life.html">Life</a>
+			<a href="blog.html">Blog</a>
 			<a href="#contact">Contact</a>
 		</nav>
 	</header>
@@ -243,8 +244,8 @@
 				</div>
 				<div class="education-map" aria-label="Academic pathway map">
 					<img class="world-map-image" src="images/demo/world-map.svg" alt="" aria-hidden="true" loading="lazy">
-					<svg class="education-route" viewBox="0 0 100 52" aria-hidden="true" focusable="false">
-						<path class="route-line" d="M22 24 C38 12 55 18 64 30 S78 39 84 28"/>
+					<svg class="education-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+						<path class="route-line" d="M22 24 C36 13 50 38 64 58 C72 72 75 48 76 28"/>
 					</svg>
 					<article class="education-pin education-china" style="--x: 22%; --y: 24%;">
 						<span class="education-dot" aria-hidden="true"></span>
@@ -257,7 +258,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="education-pin education-singapore" style="--x: 64%; --y: 30%;">
+					<article class="education-pin education-singapore" style="--x: 64%; --y: 58%;">
 						<span class="education-dot" aria-hidden="true"></span>
 						<div class="education-label">
 							<span class="education-logo"><img src="images/demo/logo-master.svg" alt=""></span>
@@ -268,7 +269,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="education-pin education-sweden" style="--x: 84%; --y: 28%;">
+					<article class="education-pin education-sweden" style="--x: 76%; --y: 28%;">
 						<span class="education-dot" aria-hidden="true"></span>
 						<div class="education-label">
 							<span class="education-logo"><img src="images/demo/logo-phd.svg" alt=""></span>
@@ -317,7 +318,10 @@
 						<span>Email</span>
 						<div class="contact-email-row">
 							<a class="contact-email" href="mailto:alex@example.edu">alex [at] example.edu</a>
-							<button class="copy-email" type="button" data-email="alex@example.edu">Copy</button>
+							<button class="copy-email" type="button" data-email="alex@example.edu" aria-label="Copy email address" title="Copy email address">
+								<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-1v1a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h1V7Zm2 1h3a3 3 0 0 1 3 3v3h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v1Zm-3 2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H7Z"/></svg>
+								<span class="visually-hidden">Copy</span>
+							</button>
 						</div>
 					</article>
 					<article class="contact-card">

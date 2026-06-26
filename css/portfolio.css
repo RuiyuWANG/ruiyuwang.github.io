@@ -1162,7 +1162,8 @@ body.portfolio-site.is-lightbox-open {
   align-items: center;
   gap: 10px;
   width: max-content;
-  max-width: 300px;
+  max-width: 260px;
+  min-width: 0;
   transform: translate(var(--label-x), var(--label-y));
   transition: transform 180ms ease;
 }
@@ -1170,30 +1171,28 @@ body.portfolio-site.is-lightbox-open {
 .education-copy {
   display: grid;
   gap: 1px;
+  min-width: 0;
 }
 
 .education-sweden .education-label {
-  --label-y: -50%;
-  --label-hover-y: calc(-50% - 2px);
-  right: 34px;
-  top: 0;
+  --label-hover-y: -2px;
+  right: 32px;
+  top: -20px;
   text-align: right;
   flex-direction: row-reverse;
 }
 
 .education-china .education-label {
-  --label-x: -50%;
   --label-hover-y: -2px;
-  left: 0;
-  bottom: 34px;
+  left: 30px;
+  top: -72px;
   text-align: left;
 }
 
 .education-singapore .education-label {
-  --label-y: -50%;
-  --label-hover-y: calc(-50% - 2px);
-  right: 34px;
-  top: 66px;
+  --label-hover-y: -2px;
+  right: 32px;
+  top: 38px;
   text-align: right;
   flex-direction: row-reverse;
 }
@@ -1359,10 +1358,18 @@ body.portfolio-site.is-lightbox-open {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 28px;
-  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  padding: 0;
   font-size: 12px;
   line-height: 1;
+}
+
+.copy-email svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .contact-links {
@@ -1828,6 +1835,13 @@ body.portfolio-site.is-lightbox-open {
   padding: 30px 0 64px;
 }
 
+body:not(.template-edit-mode) .blog-template-section {
+  display: block;
+  width: min(880px, 100%);
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
 .blog-editor-panel,
 .blog-preview-panel {
   min-width: 0;
@@ -1842,6 +1856,20 @@ body.portfolio-site.is-lightbox-open {
   display: grid;
   grid-template-rows: auto minmax(620px, 1fr);
   overflow: hidden;
+}
+
+body:not(.template-edit-mode) .blog-editor-panel,
+body:not(.template-edit-mode) .blog-preview-panel .blog-panel-heading {
+  display: none;
+}
+
+body:not(.template-edit-mode) .blog-preview-panel {
+  display: block;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .blog-panel-heading {
@@ -1903,6 +1931,13 @@ body.portfolio-site.is-lightbox-open {
   background:
     linear-gradient(180deg, rgba(248, 250, 252, 0.8), rgba(255, 255, 255, 0.96) 190px),
     #fff;
+}
+
+body:not(.template-edit-mode) .blog-post-preview {
+  min-height: 0;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
 }
 
 .markdown-body {
@@ -2274,6 +2309,10 @@ body.portfolio-site.is-lightbox-open {
     min-height: 380px;
   }
 
+  .education-map {
+    min-height: 440px;
+  }
+
   .theme-wordcloud {
     gap: 7px 10px;
     padding: 22px;
@@ -2500,16 +2539,18 @@ body.portfolio-site.is-lightbox-open {
 
   .education-sweden .education-label {
     right: 30px;
-    top: 0;
+    top: -16px;
   }
 
   .education-china .education-label {
-    bottom: 30px;
+    left: 26px;
+    top: -60px;
+    bottom: auto;
   }
 
   .education-singapore .education-label {
     right: 30px;
-    top: 58px;
+    top: 42px;
   }
 
   .education-pin h3 {
@@ -2752,20 +2793,21 @@ body.portfolio-site.is-lightbox-open {
 
   .education-label {
     gap: 7px;
-    width: 172px;
-    max-width: 172px;
+    width: 176px;
+    max-width: 176px;
   }
 
   .education-sweden .education-label {
-    right: 28px;
-    top: -18px;
+    right: 24px;
+    top: 4px;
   }
 
   .education-china .education-label {
     --label-x: 0;
     gap: 6px;
     left: 24px;
-    bottom: 30px;
+    top: -62px;
+    bottom: auto;
     text-align: left;
     flex-direction: row;
   }
@@ -2774,7 +2816,7 @@ body.portfolio-site.is-lightbox-open {
     --label-x: -50%;
     left: 0;
     right: auto;
-    top: 48px;
+    top: 38px;
     text-align: center;
     flex-direction: column;
   }

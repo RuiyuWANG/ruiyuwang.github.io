@@ -40,5 +40,5 @@
   "life.title": "Photo Drops",
   "life.intro": "A public photo gallery generated from files in <code>images/oc</code>. Replace these placeholders with your own public images and rerun <code>npm run build:life</code>.",
   "blog.title": "Blog",
-  "blog.intro": "A Markdown workspace for technical notes, paper stories, experiment logs, and visual essays. The tab is hidden from the main navigation until you decide to publish writing."
+  "blog.intro": "A compiled Markdown post template for technical notes, paper stories, experiment logs, and visual essays. Open this page with <code>?edit=1</code> on localhost to reveal the Markdown workspace."
 }

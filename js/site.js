@@ -317,18 +317,37 @@
 
   if (copyButton) {
     copyButton.addEventListener("click", async () => {
-      const originalLabel = copyButton.textContent;
+      const copyLabel = copyButton.querySelector(".visually-hidden");
+      const originalLabel = copyLabel ? copyLabel.textContent : copyButton.textContent;
+      const originalAriaLabel = copyButton.getAttribute("aria-label") || originalLabel;
+      const originalTitle = copyButton.getAttribute("title") || originalAriaLabel;
+
+      const setCopyStatus = (label) => {
+        if (copyLabel) {
+          copyLabel.textContent = label;
+        } else {
+          copyButton.textContent = label;
+        }
+        copyButton.setAttribute("aria-label", label);
+        copyButton.setAttribute("title", label);
+      };
 
       try {
         await copyText(copyButton.dataset.email);
-        copyButton.textContent = "Copied";
+        setCopyStatus("Copied");
         copyButton.classList.add("is-copied");
       } catch (error) {
-        copyButton.textContent = "Copy Failed";
+        setCopyStatus("Copy failed");
       }
 
       window.setTimeout(() => {
-        copyButton.textContent = originalLabel;
+        if (copyLabel) {
+          copyLabel.textContent = originalLabel;
+        } else {
+          copyButton.textContent = originalLabel;
+        }
+        copyButton.setAttribute("aria-label", originalAriaLabel);
+        copyButton.setAttribute("title", originalTitle);
         copyButton.classList.remove("is-copied");
       }, 1800);
     });
