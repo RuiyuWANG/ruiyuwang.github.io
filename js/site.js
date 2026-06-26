@@ -96,7 +96,7 @@
         return;
       }
 
-      collapseTimer = window.setTimeout(collapseProfile, 3000);
+      collapseTimer = window.setTimeout(collapseProfile, 2000);
     };
 
     const collapseOnUserScroll = () => {

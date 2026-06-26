@@ -2706,17 +2706,17 @@ body.portfolio-site.is-lightbox-open {
 
   .education-label {
     gap: 7px;
-    width: 178px;
-    max-width: 178px;
+    width: 190px;
+    max-width: 190px;
   }
 
   .education-sweden .education-label {
-    right: 44px;
+    right: 12px;
     top: -12px;
   }
 
   .education-china .education-label {
-    --label-x: -82%;
+    --label-x: -61%;
     bottom: 22px;
   }
 
