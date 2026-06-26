@@ -244,18 +244,22 @@
 
   if (copyButton) {
     copyButton.addEventListener("click", async () => {
-      const originalLabel = copyButton.textContent;
+      const originalLabel = copyButton.getAttribute("aria-label") || "Copy email address";
+      const originalTitle = copyButton.getAttribute("title") || originalLabel;
 
       try {
         await copyText(copyButton.dataset.email);
-        copyButton.textContent = "Copied";
+        copyButton.setAttribute("aria-label", "Copied email address");
+        copyButton.setAttribute("title", "Copied");
         copyButton.classList.add("is-copied");
       } catch (error) {
-        copyButton.textContent = "Copy Failed";
+        copyButton.setAttribute("aria-label", "Could not copy email address");
+        copyButton.setAttribute("title", "Copy failed");
       }
 
       window.setTimeout(() => {
-        copyButton.textContent = originalLabel;
+        copyButton.setAttribute("aria-label", originalLabel);
+        copyButton.setAttribute("title", originalTitle);
         copyButton.classList.remove("is-copied");
       }, 1800);
     });

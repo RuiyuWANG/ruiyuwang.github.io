@@ -1356,10 +1356,21 @@ body.portfolio-site.is-lightbox-open {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 30px;
   min-height: 28px;
-  padding: 5px 10px;
+  padding: 5px;
   font-size: 12px;
   line-height: 1;
+}
+
+.copy-email svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contact-links {
