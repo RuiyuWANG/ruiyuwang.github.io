@@ -106,4 +106,4 @@ const data = {
 const contents = `window.RESEARCH_KEYWORD_DATA = ${JSON.stringify(data, null, 2)};\n`;
 fs.writeFileSync(outputPath, contents);
 
-console.log(`Wrote ${path.relative(root, outputPath)} with ${keywords.length} keywords for ${paperEntries.length}.`);
+console.log(`Wrote ${path.relative(root, outputPath)} with ${keywords.length} keywords for ${paperEntries.length} papers.`);

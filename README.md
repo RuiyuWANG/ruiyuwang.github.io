@@ -1,6 +1,6 @@
-# Ruiyu Wang Website
+# Personal Website
 
-Static personal website for `ruiyuwang.github.io`.
+Static personal website, hosted at `ruiyuwang.github.io`.
 
 The root `.nojekyll` file is required because the Life gallery includes image
 filenames that start with `_`; GitHub Pages/Jekyll otherwise hides those files.
@@ -20,13 +20,13 @@ filenames that start with `_`; GitHub Pages/Jekyll otherwise hides those files.
 
 ## Local preview
 
-Use a high port if another local server is already running:
+To preview the site locally, run:
 
 ```sh
-python3 -m http.server 8001
+python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8001`.
+Then open `http://localhost:8000`.
 
 ## Checks
 
@@ -74,7 +74,7 @@ The script skips files whose names start with `profile_` or `profile-`.
 
 ## Privacy notes
 
-This is a public GitHub Pages site. Keep raw CVs, private PDFs, source documents,
+Keep raw CVs, private PDFs, source documents,
 unselected images, notes, and local-only material in the ignored folders listed
 in `.gitignore` such as `.pdfs/`, `pdfs/private/`, `images/private/`, and
 `images/originals/`.
