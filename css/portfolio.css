@@ -2716,8 +2716,18 @@ body.portfolio-site.is-lightbox-open {
   }
 
   .education-china .education-label {
-    --label-x: -50%;
-    bottom: 30px;
+    --label-x: -94%;
+    width: 190px;
+    max-width: 190px;
+    gap: 6px;
+    bottom: 42px;
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+
+  .education-china .education-copy {
+    width: auto;
+    max-width: none;
   }
 
   .education-singapore .education-label {
