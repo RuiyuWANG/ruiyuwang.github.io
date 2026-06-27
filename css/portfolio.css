@@ -1461,6 +1461,20 @@ body.portfolio-site.is-lightbox-open {
   font-weight: 750;
 }
 
+.footer-credit {
+  display: grid;
+  gap: 4px;
+}
+
+.footer-credit p:last-child {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-credit a {
+  font-size: inherit;
+}
+
 .photo-lightbox[hidden] {
   display: none;
 }
